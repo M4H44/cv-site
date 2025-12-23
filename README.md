@@ -28,7 +28,7 @@ It is intended primarily for recruiters and hiring managers as a quick technical
 
 ## Live Website
 
-👉 https://m4h44.github.io/cv-site/
+👉 https://m4h44.github.io/cv-site/en/index.html
 
 Deployed using **GitHub Pages**.
 
