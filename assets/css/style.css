@@ -1,0 +1,35 @@
+/* CV site – small progressive enhancements on top of Bootstrap */
+
+html {
+    scroll-behavior: smooth;
+}
+
+/* Keep navigation reachable while scrolling long pages */
+.navbar {
+    position: sticky;
+    top: 0;
+    z-index: 1030;
+    box-shadow: 0 2px 6px rgba(0, 0, 0, .08);
+}
+
+/* Subtle depth on the hero */
+header.bg-light {
+    background: linear-gradient(180deg, #f8f9fa 0%, #eceff3 100%) !important;
+}
+
+/* Gentle lift on interactive cards */
+.card {
+    transition: transform .15s ease, box-shadow .15s ease;
+}
+
+.card:hover {
+    transform: translateY(-3px);
+    box-shadow: 0 .5rem 1rem rgba(0, 0, 0, .12) !important;
+}
+
+/* Respect users who prefer no motion */
+@media (prefers-reduced-motion: reduce) {
+    html { scroll-behavior: auto; }
+    .card { transition: none; }
+    .card:hover { transform: none; }
+}
