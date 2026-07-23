@@ -19,13 +19,6 @@
 
 
     <link rel="stylesheet" href="assets/css/style.css">
-    <script>
-        (function () {
-            var t = localStorage.getItem('theme') ||
-                (window.matchMedia('(prefers-color-scheme: dark)').matches ? 'dark' : 'light');
-            document.documentElement.setAttribute('data-bs-theme', t);
-        })();
-    </script>
 </head>
 <body>
 
@@ -42,7 +35,6 @@
             <a class="nav-link" href="education.html">Vzdelanie</a>
             <a class="nav-link" href="contact.html">Kontakt</a>
             <a class="nav-link" href="en/index.html">EN</a>
-            <button type="button" id="theme-toggle" class="btn btn-sm btn-outline-light ms-lg-2 my-1 my-lg-0" aria-label="Prepnúť tmavý režim" title="Prepnúť tmavý režim"><i class="bi bi-moon-stars-fill"></i></button>
         </div>
         </div>
     </div>
@@ -171,6 +163,5 @@
 </footer>
 
 <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
-<script src="assets/js/theme.js"></script>
 </body>
 </html>
