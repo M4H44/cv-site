@@ -29,7 +29,15 @@ header.bg-light {
 
 /* Respect users who prefer no motion */
 @media (prefers-reduced-motion: reduce) {
-    html { scroll-behavior: auto; }
-    .card { transition: none; }
-    .card:hover { transform: none; }
+    html {
+        scroll-behavior: auto;
+    }
+
+    .card {
+        transition: none;
+    }
+
+    .card:hover {
+        transform: none;
+    }
 }
