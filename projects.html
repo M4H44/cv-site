@@ -51,25 +51,32 @@
                 <div class="card-body">
 
                     <h5 class="card-title mb-1">Firemná aplikácia – správa dochádzky a zmien (Continental)</h5>
-                    <span class="badge bg-primary mb-3">Hlavný projekt · v procese vývoja</span>
+                    <span class="badge bg-primary mb-3">Hlavný projekt</span>
+                    <span class="badge bg-success mb-3">5 modulov dokončených</span>
 
                     <p class="card-text mt-2">
                         Webová aplikácia na správu dochádzky, plánu zmien a súvisiacich procesov
                         v podnikovom prostredí. Prepis existujúcej PHP aplikácie do modernej
-                        architektúry Java (Spring Boot) + React.
+                        architektúry Java (Spring Boot 4) + React 19 v TypeScripte.
                     </p>
 
                     <ul>
-                        <li>evidencia dochádzky a plánovanie zmien</li>
-                        <li>viacrolové rozhranie a používateľské práva</li>
-                        <li>REST API, databázový návrh (PostgreSQL)</li>
+                        <li>päť dokončených modulov: kalendár zmien, dochádzka, pravidlá dochádzky,
+                            absencie a nadčasy, matica profesnosti
+                        </li>
+                        <li>hierarchia rolí a oprávnenia na úrovni jednotlivých endpointov (Spring Security)</li>
+                        <li>návrh databázy v PostgreSQL, verzionované migrácie (Flyway) vrátane pohľadov</li>
+                        <li>export zostáv do PDF</li>
+                        <li>unit a integračné testy na backende aj frontende (JUnit 5, MockMvc, @DataJpaTest, Vitest)
+                        </li>
                         <li>Docker prostredie, Git workflow</li>
                     </ul>
 
                     <p class="small">
-                        <i class="bi bi-cup-hot text-warning"></i> Java
+                        <i class="bi bi-cup-hot text-warning"></i> Java 21
                         <i class="devicon-spring-original colored ms-2"></i> Spring Boot
                         <i class="devicon-react-original colored ms-2"></i> React
+                        <i class="devicon-typescript-plain colored ms-2"></i> TypeScript
                         <i class="bi bi-database text-info ms-2"></i> PostgreSQL
                         <i class="bi bi-box text-primary ms-2"></i> Docker
                         <i class="bi bi-git text-danger ms-2"></i> Git
