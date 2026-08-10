@@ -4,6 +4,11 @@ html {
     scroll-behavior: smooth;
 }
 
+/* Page sits slightly darker than the cards so cards read as elevated */
+body {
+    background-color: #f5f6f8;
+}
+
 /* Keep navigation reachable while scrolling long pages */
 .navbar {
     position: sticky;

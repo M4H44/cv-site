@@ -51,25 +51,33 @@
                 <div class="card-body">
 
                     <h5 class="card-title mb-1">Corporate app – attendance &amp; shift management (Continental)</h5>
-                    <span class="badge bg-primary mb-3">Main project · in development</span>
+                    <span class="badge bg-primary mb-3">Main project</span>
+                    <span class="badge bg-success mb-3">5 modules completed</span>
 
                     <p class="card-text mt-2">
                         Web application for managing attendance, shift planning and related processes
                         in a corporate environment. A rewrite of a legacy PHP system to a modern
-                        Java (Spring Boot) + React architecture.
+                        Java (Spring Boot 4) + React 19 architecture written in TypeScript.
                     </p>
 
                     <ul>
-                        <li>attendance tracking and shift planning</li>
-                        <li>multi-role interface and user permissions</li>
-                        <li>REST API, database design (PostgreSQL)</li>
+                        <li>five completed modules: shift calendar, attendance, attendance rules,
+                            absences and overtime, qualification matrix
+                        </li>
+                        <li>role hierarchy and endpoint-level authorization (Spring Security)</li>
+                        <li>PostgreSQL database design, versioned migrations (Flyway) including views</li>
+                        <li>PDF report export</li>
+                        <li>unit and integration tests on both backend and frontend (JUnit 5, MockMvc, @DataJpaTest,
+                            Vitest)
+                        </li>
                         <li>Docker environment, Git workflow</li>
                     </ul>
 
                     <p class="small">
-                        <i class="bi bi-cup-hot text-warning"></i> Java
+                        <i class="bi bi-cup-hot text-warning"></i> Java 21
                         <i class="devicon-spring-original colored ms-2"></i> Spring Boot
                         <i class="devicon-react-original colored ms-2"></i> React
+                        <i class="devicon-typescript-plain colored ms-2"></i> TypeScript
                         <i class="bi bi-database text-info ms-2"></i> PostgreSQL
                         <i class="bi bi-box text-primary ms-2"></i> Docker
                         <i class="bi bi-git text-danger ms-2"></i> Git
