@@ -4,7 +4,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <meta name="description"
-          content="Technické zručnosti Martina Huťku – Node.js, Express, REST API, MySQL, Java, Spring Boot, Docker a Git.">
+          content="Technické zručnosti Martina Huťku – Java 21, Spring Boot, PostgreSQL, React, TypeScript, Docker, Git a testovanie (JUnit, Vitest).">
     <title>Technické zručnosti – Martin Huťka</title>
     <link rel="icon" href="favicon.ico" type="image/x-icon">
 
@@ -52,32 +52,65 @@
 <section class="container my-5">
     <div class="row g-4 justify-content-center">
 
-        <!-- BACKEND -->
+        <!-- BACKEND — JAVA -->
         <div class="col-md-5">
-            <div class="card h-100 text-center shadow-sm">
+            <div class="card h-100 text-center shadow-sm" style="border-left: 4px solid #f89820;">
                 <div class="card-body">
                     <h5 class="fw-semibold mb-3">
-                        <i class="bi bi-server text-primary me-2"></i>
-                        Backend
+                        <i class="devicon-java-plain colored me-2"></i>
+                        Backend — Java
                     </h5>
 
                     <ul class="list-unstyled">
-                        <li>
-                            <i class="bi bi-node-plus-fill" style="color:#3C873A"></i>
-                            Node.js, Express
+                        <li><i class="devicon-java-plain colored"></i> Java 21 (OOP, kolekcie, streamy)</li>
+                        <li><i class="devicon-spring-original colored"></i> Spring Boot 4</li>
+                        <li><i class="bi bi-diagram-3 text-success"></i> Spring Data JPA / Hibernate</li>
+                        <li><i class="bi bi-arrow-left-right text-primary"></i> REST API, DTO, validácia</li>
+                        <li><i class="bi bi-shield-lock text-secondary"></i> Spring Security — session login, BCrypt,
+                            CSRF
                         </li>
-                        <li>
-                            <i class="bi bi-arrow-left-right text-primary"></i>
-                            REST API
+                        <li><i class="bi bi-person-badge text-danger"></i> Rolové oprávnenia (@PreAuthorize, hierarchia
+                            rolí)
                         </li>
-                        <li>
-                            <i class="bi bi-database-fill" style="color:#00758F"></i>
-                            MySQL / MariaDB
-                        </li>
-                        <li>
-                            <i class="bi bi-shield-lock text-secondary"></i>
-                            Autentifikácia, CRUD operácie
-                        </li>
+                        <li><i class="bi bi-layers-half text-info"></i> Flyway migrácie</li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+
+        <!-- BACKEND — NODE.JS -->
+        <div class="col-md-5">
+            <div class="card h-100 text-center shadow-sm" style="border-left: 4px solid #3C873A;">
+                <div class="card-body">
+                    <h5 class="fw-semibold mb-3">
+                        <i class="bi bi-node-plus-fill me-2" style="color:#3C873A"></i>
+                        Backend — Node.js
+                    </h5>
+
+                    <ul class="list-unstyled">
+                        <li><i class="bi bi-node-plus-fill" style="color:#3C873A"></i> Node.js, Express</li>
+                        <li><i class="bi bi-arrow-left-right text-primary"></i> REST API, routovanie, middleware</li>
+                        <li><i class="bi bi-shield-lock text-secondary"></i> Autentifikácia, správa relácií</li>
+                        <li><i class="bi bi-diagram-2 text-success"></i> Viacrolové aplikácie</li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+
+        <!-- DATABÁZY -->
+        <div class="col-md-5">
+            <div class="card h-100 text-center shadow-sm" style="border-left: 4px solid #336791;">
+                <div class="card-body">
+                    <h5 class="fw-semibold mb-3">
+                        <i class="devicon-postgresql-plain colored me-2"></i>
+                        Databázy
+                    </h5>
+
+                    <ul class="list-unstyled">
+                        <li><i class="devicon-postgresql-plain colored"></i> PostgreSQL</li>
+                        <li><i class="bi bi-database-fill" style="color:#00758F"></i> MySQL / MariaDB</li>
+                        <li><i class="bi bi-table text-primary"></i> SQL — JOIN, agregácie, pohľady (views)</li>
+                        <li><i class="bi bi-diagram-3 text-success"></i> Návrh schémy a vzťahov</li>
                     </ul>
                 </div>
             </div>
@@ -85,57 +118,48 @@
 
         <!-- FRONTEND -->
         <div class="col-md-5">
-            <div class="card h-100 text-center shadow-sm">
+            <div class="card h-100 text-center shadow-sm" style="border-left: 4px solid #61DAFB;">
                 <div class="card-body">
                     <h5 class="fw-semibold mb-3">
-                        <i class="bi bi-layout-text-window text-info me-2"></i>
-                        Frontend (základy)
+                        <i class="devicon-react-original colored me-2"></i>
+                        Frontend
                     </h5>
 
                     <ul class="list-unstyled">
-                        <li>
-                            <i class="bi bi-code-slash"></i>
-                            HTML5, CSS3, Bootstrap
-                        </li>
-                        <li>
-                            <i class="bi bi-filetype-js text-warning"></i>
-                            JavaScript
-                        </li>
-                        <li>
-                            <i class="devicon-react-original colored"></i>
-                            React (základy)
-                        </li>
+                        <li><i class="devicon-react-original colored"></i> React 19 (komponenty, hooks)</li>
+                        <li><i class="devicon-typescript-plain colored"></i> TypeScript</li>
+                        <li><i class="bi bi-signpost-split text-danger"></i> React Router</li>
+                        <li><i class="bi bi-lightning-charge-fill text-warning"></i> Vite</li>
+                        <li><i class="bi bi-filetype-js text-warning"></i> JavaScript (ES6+)</li>
+                        <li><i class="bi bi-code-slash text-primary"></i> HTML5, CSS3, Bootstrap</li>
                     </ul>
                 </div>
             </div>
         </div>
 
-        <!-- JAVA -->
+        <!-- TESTOVANIE -->
         <div class="col-md-5">
-            <div class="card h-100 text-center shadow-sm">
+            <div class="card h-100 text-center shadow-sm" style="border-left: 4px solid #198754;">
                 <div class="card-body">
                     <h5 class="fw-semibold mb-3">
-                        <i class="bi bi-cup-hot-fill" style="color:#f89820"></i>
-                        Java
+                        <i class="bi bi-check2-square text-success me-2"></i>
+                        Testovanie
                     </h5>
 
                     <ul class="list-unstyled">
-                        <li>
-                            <i class="devicon-java-plain colored"></i>
-                            Java SE
-                        </li>
-                        <li>
-                            <i class="devicon-spring-original colored"></i>
-                            Spring Boot (základy)
-                        </li>
+                        <li><i class="devicon-java-plain colored"></i> JUnit 5, Mockito — unit testy</li>
+                        <li><i class="bi bi-arrow-left-right text-primary"></i> MockMvc — testy REST endpointov</li>
+                        <li><i class="bi bi-database-check text-info"></i> @DataJpaTest — integračné testy nad DB</li>
+                        <li><i class="bi bi-person-check text-danger"></i> Testy rolí a oprávnení</li>
+                        <li><i class="devicon-react-original colored"></i> Vitest, React Testing Library</li>
                     </ul>
                 </div>
             </div>
         </div>
 
-        <!-- TOOLS -->
+        <!-- NÁSTROJE A PROSTREDIE -->
         <div class="col-md-5">
-            <div class="card h-100 text-center shadow-sm">
+            <div class="card h-100 text-center shadow-sm" style="border-left: 4px solid #6c757d;">
                 <div class="card-body">
                     <h5 class="fw-semibold mb-3">
                         <i class="bi bi-tools text-secondary me-2"></i>
@@ -143,26 +167,11 @@
                     </h5>
 
                     <ul class="list-unstyled">
-                        <li>
-                            <i class="bi bi-git" style="color:#f34f29"></i>
-                            Git (GitLab, GitHub)
-                        </li>
-                        <li>
-                            <i class="bi bi-box-fill" style="color:#0db7ed"></i>
-                            Docker, docker-compose
-                        </li>
-                        <li>
-                            <i class="devicon-intellij-plain colored"></i>
-                            IntelliJ IDEA
-                        </li>
-                        <li>
-                            <i class="bi bi-laptop"></i>
-                            VS Code, WebStorm
-                        </li>
-                        <li>
-                            <i class="bi bi-windows"></i>
-                            Windows, základy Linuxu
-                        </li>
+                        <li><i class="bi bi-git" style="color:#f34f29"></i> Git — vetvenie, merge, pull requesty</li>
+                        <li><i class="bi bi-boxes text-danger"></i> Maven, npm — build a závislosti</li>
+                        <li><i class="bi bi-box-fill" style="color:#0db7ed"></i> Docker, docker-compose</li>
+                        <li><i class="devicon-intellij-plain colored"></i> IntelliJ IDEA, WebStorm, VS Code</li>
+                        <li><i class="bi bi-terminal-fill text-secondary"></i> Windows, WSL, základy Linuxu</li>
                     </ul>
                 </div>
             </div>
