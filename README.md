@@ -2,8 +2,8 @@
 
 Personal website serving as an online CV and project portfolio.
 
-The website provides a clear overview of my skills, projects, education, and certificates.
-It is intended primarily for recruiters and hiring managers as a quick technical profile preview.
+The website provides a clear overview of my skills, projects, education, and certificates. It is intended primarily for
+recruiters and hiring managers as a quick technical profile preview.
 
 ---
 
@@ -36,8 +36,8 @@ Deployed using **GitHub Pages**.
 
 ## Repository Purpose
 
-This repository contains the source code of my personal CV website.
-It is a **static project** intended for presentation and demonstration purposes.
+This repository contains the source code of my personal CV website. It is a **static project** intended for presentation
+and demonstration purposes.
 
 ---
 
@@ -48,14 +48,12 @@ Junior Web / Backend Developer
 
 GitHub: https://github.com/M4H44
 
-
-
 # Osobné webové CV / Portfólio
 
 Osobná webová stránka slúžiaca ako online životopis a portfólio projektov.
 
-Stránka prehľadne prezentuje moje zručnosti, projekty, vzdelanie a certifikáty.
-Je určená najmä pre personalistov a náborových manažérov ako rýchly prehľad profilu.
+Stránka prehľadne prezentuje moje zručnosti, projekty, vzdelanie a certifikáty. Je určená najmä pre personalistov a
+náborových manažérov ako rýchly prehľad profilu.
 
 ---
 
@@ -88,8 +86,8 @@ Nasadené pomocou **GitHub Pages**.
 
 ## Účel repozitára
 
-Tento repozitár obsahuje zdrojový kód môjho osobného webového CV.
-Ide o **statický projekt**, ktorý slúži na prezentačné a ukážkové účely.
+Tento repozitár obsahuje zdrojový kód môjho osobného webového CV. Ide o **statický projekt**, ktorý slúži na prezentačné
+a ukážkové účely.
 
 ---
 
