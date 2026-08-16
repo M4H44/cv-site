@@ -4,7 +4,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <meta name="description"
-          content="Overview of Martin Huťka's projects – web applications in Node.js, Express, MySQL and Docker, with demo videos.">
+          content="Overview of Martin Huťka's projects – a corporate Java (Spring Boot) and React app with PostgreSQL, plus Node.js, Express, Docker and demo videos.">
     <title>Projects – Martin Huťka</title>
     <link rel="icon" href="../favicon.ico" type="image/x-icon">
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet">
@@ -47,7 +47,7 @@
         <!-- CONTINENTAL – main project -->
         <div class="col-12 d-flex justify-content-center">
             <div class="card shadow-sm w-100"
-                 style="max-width: 900px; border-left: 4px solid #0d6efd;">
+                 style="max-width: 900px; border: 1px solid #0d6efd; border-left: 4px solid #0d6efd;">
                 <div class="card-body">
 
                     <h5 class="card-title mb-1">Corporate app – attendance &amp; shift management (Continental)</h5>
@@ -65,8 +65,9 @@
                             absences and overtime, qualification matrix
                         </li>
                         <li>role hierarchy and endpoint-level authorization (Spring Security)</li>
+                        <li>login attempt rate limiting</li>
                         <li>PostgreSQL database design, versioned migrations (Flyway) including views</li>
-                        <li>PDF report export</li>
+                        <li>server-side PDF report generation (OpenPDF) — qualification matrix</li>
                         <li>unit and integration tests on both backend and frontend (JUnit 5, MockMvc, @DataJpaTest,
                             Vitest)
                         </li>
@@ -74,11 +75,11 @@
                     </ul>
 
                     <p class="small">
-                        <i class="bi bi-cup-hot text-warning"></i> Java 21
+                        <i class="devicon-java-plain colored"></i> Java 21
                         <i class="devicon-spring-original colored ms-2"></i> Spring Boot
                         <i class="devicon-react-original colored ms-2"></i> React
                         <i class="devicon-typescript-plain colored ms-2"></i> TypeScript
-                        <i class="bi bi-database text-info ms-2"></i> PostgreSQL
+                        <i class="devicon-postgresql-plain colored ms-2"></i> PostgreSQL
                         <i class="bi bi-box text-primary ms-2"></i> Docker
                         <i class="bi bi-git text-danger ms-2"></i> Git
                     </p>
@@ -97,7 +98,7 @@
         <!-- RESERVATION SYSTEM -->
         <div class="col-12 d-flex justify-content-center">
             <div class="card shadow-sm w-100"
-                 style="max-width: 900px; border-left: 4px solid #20c997;">
+                 style="max-width: 900px; border: 1px solid #20c997; border-left: 4px solid #20c997;">
                 <div class="card-body">
 
                     <h5 class="card-title mb-1">Reservation System for Services</h5>
@@ -142,7 +143,8 @@
 
         <!-- INVESTMENT CALCULATOR -->
         <div class="col-12 d-flex justify-content-center">
-            <div class="card shadow-sm w-100" style="max-width: 900px; border-left: 4px solid #198754;">
+            <div class="card shadow-sm w-100"
+                 style="max-width: 900px; border: 1px solid #198754; border-left: 4px solid #198754;">
                 <div class="card-body">
                     <h5 class="card-title mb-1">Investment Calculator</h5>
 
@@ -177,7 +179,7 @@
         <!-- STUDENT GRADEBOOK -->
         <div class="col-12 d-flex justify-content-center">
             <div class="card shadow-sm w-100"
-                 style="max-width: 900px; border-left: 4px solid #fd7e14;">
+                 style="max-width: 900px; border: 1px solid #fd7e14; border-left: 4px solid #fd7e14;">
                 <div class="card-body">
 
                     <h5 class="card-title mb-1">Student Gradebook</h5>
@@ -222,7 +224,8 @@
 
         <!-- WEB CV -->
         <div class="col-12 d-flex justify-content-center">
-            <div class="card shadow-sm w-100" style="max-width: 900px; border-left: 4px solid #6f42c1;">
+            <div class="card shadow-sm w-100"
+                 style="max-width: 900px; border: 1px solid #6f42c1; border-left: 4px solid #6f42c1;">
                 <div class="card-body">
                     <h5 class="card-title mb-1">Personal Web CV / Portfolio</h5>
 

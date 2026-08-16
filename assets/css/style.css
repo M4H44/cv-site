@@ -6,7 +6,7 @@ html {
 
 /* Page sits slightly darker than the cards so cards read as elevated */
 body {
-    background-color: #f5f6f8;
+    background-color: #e9ecef;
 }
 
 /* Keep navigation reachable while scrolling long pages */
@@ -19,11 +19,13 @@ body {
 
 /* Subtle depth on the hero */
 header.bg-light {
-    background: linear-gradient(180deg, #f8f9fa 0%, #eceff3 100%) !important;
+    background: linear-gradient(180deg, #ffffff 0%, #f4f6f8 100%) !important;
+    border-bottom: 1px solid #dee2e6;
 }
 
 /* Gentle lift on interactive cards */
 .card {
+    box-shadow: 0 .25rem .75rem rgba(0, 0, 0, .12) !important;
     transition: transform .15s ease, box-shadow .15s ease;
 }
 
