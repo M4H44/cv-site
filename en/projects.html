@@ -52,24 +52,32 @@
 
                     <h5 class="card-title mb-1">Corporate app – attendance &amp; shift management (Continental)</h5>
                     <span class="badge bg-primary mb-3">Main project</span>
-                    <span class="badge bg-success mb-3">5 modules completed</span>
+                    <span class="badge bg-success mb-3">7 modules completed</span>
 
                     <p class="card-text mt-2">
                         Web application for managing attendance, shift planning and related processes
-                        in a corporate environment. A rewrite of a legacy PHP system to a modern
-                        Java (Spring Boot 4) + React 19 architecture written in TypeScript.
+                        in a corporate environment. Five modules are a rewrite of a legacy PHP system
+                        to a Java (Spring Boot 4) + React 19 architecture in TypeScript; two more
+                        I designed and built from scratch.
                     </p>
 
                     <ul>
-                        <li>five completed modules: shift calendar, attendance, attendance rules,
-                            absences and overtime, qualification matrix
+                        <li>five modules rewritten from the legacy PHP system: shift calendar, attendance,
+                            attendance rules, absences and overtime, qualification matrix
+                        </li>
+                        <li>two modules designed and built from scratch, with no PHP counterpart:
+                            user management and audit log
+                        </li>
+                        <li>audit log immutable at database level (triggers), old and new values
+                            in JSONB, IP address, deletion only after export to a file
                         </li>
                         <li>role hierarchy and endpoint-level authorization (Spring Security)</li>
                         <li>login attempt rate limiting</li>
+                        <li>routing (React Router) with role-based route guards</li>
                         <li>PostgreSQL database design, versioned migrations (Flyway) including views</li>
                         <li>server-side PDF report generation (OpenPDF) — qualification matrix</li>
-                        <li>unit and integration tests on both backend and frontend (JUnit 5, MockMvc, @DataJpaTest,
-                            Vitest)
+                        <li>more than 150 tests I wrote myself, unit and integration, on backend and frontend
+                            (JUnit 5, MockMvc, @DataJpaTest, Vitest)
                         </li>
                         <li>Docker environment, Git workflow</li>
                     </ul>

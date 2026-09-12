@@ -52,23 +52,32 @@
 
                     <h5 class="card-title mb-1">Firemná aplikácia – správa dochádzky a zmien (Continental)</h5>
                     <span class="badge bg-primary mb-3">Hlavný projekt</span>
-                    <span class="badge bg-success mb-3">5 modulov dokončených</span>
+                    <span class="badge bg-success mb-3">7 modulov dokončených</span>
 
                     <p class="card-text mt-2">
                         Webová aplikácia na správu dochádzky, plánu zmien a súvisiacich procesov
-                        v podnikovom prostredí. Prepis existujúcej PHP aplikácie do modernej
-                        architektúry Java (Spring Boot 4) + React 19 v TypeScripte.
+                        v podnikovom prostredí. Päť modulov je prepisom pôvodnej PHP aplikácie
+                        do architektúry Java (Spring Boot 4) + React 19 v TypeScripte, ďalšie dva
+                        som navrhol a naprogramoval od nuly.
                     </p>
 
                     <ul>
-                        <li>päť dokončených modulov: kalendár zmien, dochádzka, pravidlá dochádzky,
-                            absencie a nadčasy, matica profesnosti
+                        <li>päť modulov prepísaných z pôvodnej PHP aplikácie: kalendár zmien, dochádzka,
+                            pravidlá dochádzky, absencie a nadčasy, matica profesnosti
+                        </li>
+                        <li>dva moduly navrhnuté a naprogramované od nuly, bez predlohy v PHP:
+                            správa používateľov a auditný log
+                        </li>
+                        <li>auditný log nemenný na úrovni databázy (triggery), stará aj nová hodnota
+                            v JSONB, IP adresa, zmazanie až po archivácii do súboru
                         </li>
                         <li>hierarchia rolí a oprávnenia na úrovni jednotlivých endpointov (Spring Security)</li>
                         <li>obmedzenie počtu pokusov o prihlásenie (rate limiting)</li>
+                        <li>routovanie (React Router) s ochranou ciest podľa rolí</li>
                         <li>návrh databázy v PostgreSQL, verzionované migrácie (Flyway) vrátane pohľadov</li>
                         <li>generovanie PDF zostáv na backende (OpenPDF) — matica profesnosti</li>
-                        <li>unit a integračné testy na backende aj frontende (JUnit 5, MockMvc, @DataJpaTest, Vitest)
+                        <li>viac ako 150 vlastných unit a integračných testov na backende aj frontende
+                            (JUnit 5, MockMvc, @DataJpaTest, Vitest)
                         </li>
                         <li>Docker prostredie, Git workflow</li>
                     </ul>
