@@ -12,279 +12,333 @@
     <link rel="stylesheet" href="assets/css/style.css">
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/devicons/devicon@v2.16.0/devicon.min.css">
     <!-- Umami analytics -->
-    <script defer src="https://cloud.umami.is/script.js" data-website-id="a7a9dc1a-0ee0-482f-becc-7dc8a5ba9d4b"></script>
+    <script defer src="https://cloud.umami.is/script.js"
+            data-website-id="a7a9dc1a-0ee0-482f-becc-7dc8a5ba9d4b"></script>
 </head>
 <body>
 
-<nav class="navbar navbar-expand-lg navbar-dark bg-primary">
-    <div class="container">
-        <a class="navbar-brand" href="index.html">Martin Huťka</a>
-        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav"
-                aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation"><span
-                class="navbar-toggler-icon"></span></button>
-        <div class="collapse navbar-collapse" id="navbarNav">
-            <div class="navbar-nav">
-                <a class="nav-link" href="index.html">Profil</a>
-                <a class="nav-link active" href="projects.html">Projekty</a>
-                <a class="nav-link" href="skills.html">Zručnosti</a>
-                <a class="nav-link" href="certificates.html">Certifikáty</a>
-                <a class="nav-link" href="education.html">Vzdelanie</a>
-                <a class="nav-link" href="contact.html">Kontakt</a>
-                <a class="nav-link" href="en/index.html">EN</a>
-            </div>
-        </div>
-    </div>
-</nav>
-
-<header class="bg-light py-5">
-    <div class="container text-center">
-        <h1 class="display-6">Projekty</h1>
-        <p class="text-muted">Vybrané projekty</p>
-    </div>
-</header>
-
-<section class="container my-5">
-    <div class="row g-4">
-
-        <!-- CONTINENTAL – hlavný projekt -->
-        <div class="col-12 d-flex justify-content-center">
-            <div class="card shadow-sm w-100"
-                 style="max-width: 900px; border: 1px solid #0d6efd; border-left: 4px solid #0d6efd;">
-                <div class="card-body">
-
-                    <h5 class="card-title mb-1">Firemná aplikácia – správa dochádzky a zmien (Continental)</h5>
-                    <span class="badge bg-primary mb-3">Hlavný projekt</span>
-                    <span class="badge bg-success mb-3">7 modulov dokončených</span>
-
-                    <p class="card-text mt-2">
-                        Webová aplikácia na správu dochádzky, plánu zmien a súvisiacich procesov
-                        v podnikovom prostredí. Päť modulov je prepisom pôvodnej PHP aplikácie
-                        do architektúry Java (Spring Boot 4) + React 19 v TypeScripte, ďalšie dva
-                        som navrhol a naprogramoval od nuly.
-                    </p>
-
-                    <ul>
-                        <li>päť modulov prepísaných z pôvodnej PHP aplikácie: kalendár zmien, dochádzka,
-                            pravidlá dochádzky, absencie a nadčasy, matica profesnosti
-                        </li>
-                        <li>dva moduly navrhnuté a naprogramované od nuly, bez predlohy v PHP:
-                            správa používateľov a auditný log
-                        </li>
-                        <li>auditný log nemenný na úrovni databázy (triggery), stará aj nová hodnota
-                            v JSONB, IP adresa, zmazanie až po archivácii do súboru
-                        </li>
-                        <li>hierarchia rolí a oprávnenia na úrovni jednotlivých endpointov (Spring Security)</li>
-                        <li>obmedzenie počtu pokusov o prihlásenie (rate limiting)</li>
-                        <li>routovanie (React Router) s ochranou ciest podľa rolí</li>
-                        <li>návrh databázy v PostgreSQL, verzionované migrácie (Flyway) vrátane pohľadov</li>
-                        <li>generovanie PDF zostáv na backende (OpenPDF) — matica profesnosti</li>
-                        <li>viac ako 150 vlastných unit a integračných testov na backende aj frontende
-                            (JUnit 5, MockMvc, @DataJpaTest, Vitest)
-                        </li>
-                        <li>Docker prostredie, Git workflow</li>
-                    </ul>
-
-                    <p class="small">
-                        <i class="devicon-java-plain colored"></i> Java 21
-                        <i class="devicon-spring-original colored ms-2"></i> Spring Boot
-                        <i class="devicon-react-original colored ms-2"></i> React
-                        <i class="devicon-typescript-plain colored ms-2"></i> TypeScript
-                        <i class="devicon-postgresql-plain colored ms-2"></i> PostgreSQL
-                        <i class="bi bi-box text-primary ms-2"></i> Docker
-                        <i class="bi bi-git text-danger ms-2"></i> Git
-                    </p>
-                    <a href="https://github.com/M4H44/contiapp-java"
-                       target="_blank"
-                       class="btn btn-outline-primary btn-sm me-2">
-                        <i class="bi bi-github me-1"></i>
-                        GitHub (na vyžiadanie)
-                    </a>
-
+    <nav class="navbar navbar-expand-lg navbar-dark bg-primary">
+        <div class="container">
+            <a class="navbar-brand" href="index.html">Martin Huťka</a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav"
+                    aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation"><span
+                    class="navbar-toggler-icon"></span></button>
+            <div class="collapse navbar-collapse" id="navbarNav">
+                <div class="navbar-nav">
+                    <a class="nav-link" href="index.html">Profil</a>
+                    <a class="nav-link active" href="projects.html">Projekty</a>
+                    <a class="nav-link" href="skills.html">Zručnosti</a>
+                    <a class="nav-link" href="certificates.html">Certifikáty</a>
+                    <a class="nav-link" href="education.html">Vzdelanie</a>
+                    <a class="nav-link" href="contact.html">Kontakt</a>
+                    <a class="nav-link" href="en/index.html">EN</a>
                 </div>
             </div>
         </div>
+    </nav>
 
-        <!-- REZERVAČNÝ SYSTÉM -->
-        <div class="col-12 d-flex justify-content-center">
-            <div class="card shadow-sm w-100"
-                 style="max-width: 900px; border: 1px solid #20c997; border-left: 4px solid #20c997;">
-                <div class="card-body">
+    <header class="bg-light py-5">
+        <div class="container text-center">
+            <h1 class="display-6">Projekty</h1>
+            <p class="text-muted">Vybrané projekty</p>
+        </div>
+    </header>
 
-                    <h5 class="card-title mb-1">Rezervačný systém pre komerčné služby</h5>
-                    <span class="badge bg-secondary mb-3">V procese vývoja</span>
+    <section class="container my-5">
+        <div class="row g-4">
 
-                    <p class="card-text mt-2">
-                        Webová aplikácia pre správu rezervácií rôznych služieb (pneuservisy, fitnes centrá, tréneri a
-                        pod.).
-                        Momentálne v procese vývoja.
-                    </p>
+            <!-- CONTINENTAL – hlavný projekt -->
+            <div class="col-12 d-flex justify-content-center">
+                <div class="card shadow-sm w-100"
+                     style="max-width: 900px; border: 1px solid #0d6efd; border-left: 4px solid #0d6efd;">
+                    <div class="card-body">
 
-                    <ul>
-                        <li>rezervácie a správa dostupných termínov</li>
-                        <li>správa používateľov a ich rezervácií</li>
-                        <li>možnosť aktivácie/deaktivácie služieb</li>
-                        <li>používateľské a administrátorské rozhranie</li>
-                    </ul>
+                        <h5 class="card-title mb-1">Firemná aplikácia – správa dochádzky a zmien (Continental)</h5>
+                        <span class="badge bg-primary mb-3">Hlavný projekt</span>
+                        <span class="badge bg-success mb-3">8 modulov dokončených</span>
 
-                    <p class="small">
-                        <i class="bi bi-node-plus text-success"></i> Node.js
-                        <i class="bi bi-gear text-primary ms-2"></i> Express
-                        <i class="bi bi-database text-info ms-2"></i> MySQL
-                        <i class="bi bi-box text-warning ms-2"></i> Docker
-                        <i class="bi bi-git text-danger ms-2"></i> Git
-                    </p>
+                        <p class="card-text mt-2">
+                            Webová aplikácia na správu dochádzky, plánu zmien a súvisiacich procesov
+                            v podnikovom prostredí. Päť modulov je prepisom pôvodnej PHP aplikácie
+                            do architektúry Java (Spring Boot 4) + React 19 v TypeScripte, ďalšie tri
+                            som navrhol a naprogramoval od nuly.
+                        </p>
 
-                    <a href="https://github.com/M4H44/salon-booking"
-                       target="_blank"
-                       class="btn btn-outline-primary btn-sm me-2">
-                        <i class="bi bi-github me-1"></i>
-                        GitHub (na vyžiadanie)
-                    </a>
+                        <ul>
+                            <li>päť modulov prepísaných z pôvodnej PHP aplikácie: kalendár zmien, dochádzka,
+                                pravidlá dochádzky, absencie a nadčasy, matica profesnosti
+                            </li>
+                            <li>tri moduly navrhnuté a naprogramované od nuly, bez predlohy v PHP:
+                                správa používateľov, auditný log a školenia zamestnancov
+                            </li>
+                            <li>školenia: HR nahráva materiály (PDF, video do 500 MB) a priraďuje ich podľa
+                                firmy, strediska, roly, tímu či jednotlivca; zamestnanec prevzatie potvrdí heslom
+                            </li>
+                            <li>auditný log nemenný na úrovni databázy (triggery), stará aj nová hodnota
+                                v JSONB, IP adresa, zmazanie až po archivácii do súboru
+                            </li>
+                            <li>GDPR súhlas: bez súhlasu sa žiadosť eviduje anonymne, o zobrazení mena
+                                rozhoduje backend
+                            </li>
+                            <li>bezpečnosť hesiel: platnosť 6 mesiacov, zákaz posledných 3 hesiel
+                                (porovnanie cez BCrypt) a kontrola podobnosti s predchádzajúcim heslom
+                            </li>
+                            <li>hierarchia rolí a oprávnenia na úrovni jednotlivých endpointov (Spring Security)</li>
+                            <li>obmedzenie počtu pokusov o prihlásenie (rate limiting)</li>
+                            <li>routovanie (React Router) s ochranou ciest podľa rolí</li>
+                            <li>návrh databázy v PostgreSQL, verzionované migrácie (Flyway) vrátane pohľadov</li>
+                            <li>generovanie PDF zostáv na backende (OpenPDF) — matica profesnosti</li>
+                            <li>viac ako 350 vlastných unit a integračných testov na backende aj frontende
+                                (JUnit 5, MockMvc, @DataJpaTest, Vitest)
+                            </li>
+                            <li>Docker prostredie, Git workflow</li>
+                        </ul>
 
-                    <a href="https://youtu.be/UNy40AKA7lw"
-                       target="_blank"
-                       class="btn btn-outline-success btn-sm">
-                        <i class="bi bi-play-circle me-1"></i>
-                        Demo video
-                    </a>
+                        <p class="small">
+                            <i class="devicon-java-plain colored"></i> Java 21
+                            <i class="devicon-spring-original colored ms-2"></i> Spring Boot
+                            <i class="devicon-react-original colored ms-2"></i> React
+                            <i class="devicon-typescript-plain colored ms-2"></i> TypeScript
+                            <i class="devicon-postgresql-plain colored ms-2"></i> PostgreSQL
+                            <i class="bi bi-box text-primary ms-2"></i> Docker
+                            <i class="bi bi-git text-danger ms-2"></i> Git
+                        </p>
+                        <a href="https://github.com/M4H44/contiapp-java"
+                           target="_blank"
+                           class="btn btn-outline-primary btn-sm me-2">
+                            <i class="bi bi-github me-1"></i>
+                            GitHub (na vyžiadanie)
+                        </a>
+
+                    </div>
                 </div>
             </div>
-        </div>
 
-        <!-- INVESTIČNÁ KALKULAČKA -->
-        <div class="col-12 d-flex justify-content-center">
-            <div class="card shadow-sm w-100"
-                 style="max-width: 900px; border: 1px solid #198754; border-left: 4px solid #198754;">
-                <div class="card-body">
-                    <h5 class="card-title mb-1">Investičná kalkulačka</h5>
+            <!-- ŠKOLIUM – spolupráca -->
+            <div class="col-12 d-flex justify-content-center">
+                <div class="card shadow-sm w-100"
+                     style="max-width: 900px; border: 1px solid #42b883; border-left: 4px solid #42b883;">
+                    <div class="card-body">
 
-                    <p class="card-text mt-2">
-                        Webová kalkulačka pre dlhodobých investorov. Porovnanie ETF indexov, odporúčanie brokerov,
-                        vývoj investície v čase. Dostupná v 5 jazykoch (SK, CZ, EN, HU, PL).
-                    </p>
+                        <h5 class="card-title mb-1">Školium – vzdelávacia platforma pre školy</h5>
+                        <span class="badge bg-info text-dark mb-3">Spolupráca na vývoji</span>
+                        <span class="badge bg-success mb-3">V produkcii</span>
+                        <p class="card-text mt-2">
+                            Webová platforma na učenie a precvičovanie pre žiakov, učiteľov a rodičov
+                            (testy, sledovanie pokroku, avatar ako motivácia). Do tímu som sa pridal ako
+                            vývojár — moje zmeny idú cez GitHub Actions priamo do produkcie na skolium.sk.
+                        </p>
+                        <ul>
+                            <li>nastavenie produkčných e-mailov cez GitHub Actions secrets a deploy skript</li>
+                            <li>slovenská lokalizácia Laravelu (laravel-lang) vrátane nasadenia na server</li>
+                            <li>úprava CI: vyradenie <code>vendor/</code> z gitu, inštalácia závislostí cez Composer v
+                                pipeline
+                            </li>
+                            <li>opravy chýb na prehľade rodiča (úspešnosť dieťaťa, pozvánky, kontrast)</li>
+                            <li>testovanie logiky stavov avatara a nahlásenie nájdených chýb</li>
+                        </ul>
+                        <p class="small">
+                            <i class="devicon-laravel-original colored"></i> Laravel
+                            <i class="devicon-php-plain colored ms-2"></i> PHP
+                            <i class="devicon-vuejs-plain colored ms-2"></i> Vue 3
+                            <i class="devicon-typescript-plain colored ms-2"></i> TypeScript
+                            <i class="devicon-tailwindcss-original colored ms-2"></i> Tailwind
+                            <i class="devicon-mysql-plain colored ms-2"></i> MySQL
+                            <i class="devicon-githubactions-plain colored ms-2"></i> GitHub Actions
+                        </p>
+                        <a href="https://www.skolium.sk/"
+                           target="_blank"
+                           class="btn btn-outline-success btn-sm">
+                            <i class="bi bi-globe me-1"></i>
+                            Otvoriť web
+                        </a>
 
-                    <ul>
-                        <li>výpočet zloženého úročenia s infláciou</li>
-                        <li>rizikové profily a ETF odporúčania</li>
-                        <li>multijazyčná podpora</li>
-                    </ul>
-
-                    <p class="text-secondary small">
-                        <i class="bi bi-code-slash"></i> HTML
-                        <i class="bi bi-palette ms-2"></i> CSS
-                        <i class="bi bi-filetype-js ms-2"></i> JavaScript
-                        <i class="bi bi-github ms-2"></i> GitHub Pages
-                    </p>
-
-                    <a href="https://m4h44.github.io/investicna_kalkulacka/index.html"
-                       target="_blank"
-                       class="btn btn-outline-primary btn-sm me-2">
-                        <i class="bi bi-box-arrow-up-right me-1"></i>
-                        Otvoriť kalkulačku
-                    </a>
+                    </div>
                 </div>
             </div>
-        </div>
+            <!-- REZERVAČNÝ SYSTÉM -->
+            <div class="col-12 d-flex justify-content-center">
+                <div class="card shadow-sm w-100"
+                     style="max-width: 900px; border: 1px solid #20c997; border-left: 4px solid #20c997;">
+                    <div class="card-body">
 
-        <!-- ŽIACKA KNIŽKA -->
-        <div class="col-12 d-flex justify-content-center">
-            <div class="card shadow-sm w-100"
-                 style="max-width: 900px; border: 1px solid #fd7e14; border-left: 4px solid #fd7e14;">
-                <div class="card-body">
+                        <h5 class="card-title mb-1">Rezervačný systém pre komerčné služby</h5>
+                        <span class="badge bg-secondary mb-3">V procese vývoja</span>
 
-                    <h5 class="card-title mb-1">Žiacka knižka</h5>
-                    <span class="badge bg-success mb-3">Funkčné demo</span>
+                        <p class="card-text mt-2">
+                            Webová aplikácia pre správu rezervácií rôznych služieb (pneuservisy, fitnes centrá, tréneri
+                            a
+                            pod.).
+                            Momentálne v procese vývoja.
+                        </p>
 
-                    <p class="card-text mt-2">
-                        Webová aplikácia na správu žiakov, tried, predmetov a známok.
-                        Viacrolová aplikácia (admin, učiteľ, žiak).
-                    </p>
+                        <ul>
+                            <li>rezervácie a správa dostupných termínov</li>
+                            <li>správa používateľov a ich rezervácií</li>
+                            <li>možnosť aktivácie/deaktivácie služieb</li>
+                            <li>používateľské a administrátorské rozhranie</li>
+                        </ul>
 
-                    <ul>
-                        <li>správa používateľov, tried, predmetov a známok</li>
-                        <li>REST API, databázový návrh (MySQL/MariaDB)</li>
-                        <li>Docker prostredie (aplikácia + databáza)</li>
-                        <li>Git workflow (branch, merge, commit)</li>
-                    </ul>
+                        <p class="small">
+                            <i class="bi bi-node-plus text-success"></i> Node.js
+                            <i class="bi bi-gear text-primary ms-2"></i> Express
+                            <i class="bi bi-database text-info ms-2"></i> MySQL
+                            <i class="bi bi-box text-warning ms-2"></i> Docker
+                            <i class="bi bi-git text-danger ms-2"></i> Git
+                        </p>
 
-                    <p class="small">
-                        <i class="bi bi-node-plus text-success"></i> Node.js
-                        <i class="bi bi-gear text-primary ms-2"></i> Express / REST
-                        <i class="bi bi-database text-info ms-2"></i> MySQL
-                        <i class="bi bi-box text-warning ms-2"></i> Docker
-                        <i class="bi bi-git text-danger ms-2"></i> Git
-                    </p>
+                        <a href="https://github.com/M4H44/salon-booking"
+                           target="_blank"
+                           class="btn btn-outline-primary btn-sm me-2">
+                            <i class="bi bi-github me-1"></i>
+                            GitHub (na vyžiadanie)
+                        </a>
 
-                    <a href="https://github.com/M4H44/ziacka-knizka"
-                       target="_blank"
-                       class="btn btn-outline-primary btn-sm me-2">
-                        <i class="bi bi-github me-1"></i>
-                        GitHub (na vyžiadanie)
-                    </a>
-
-                    <a href="https://youtu.be/jJuftdvfCCQ"
-                       target="_blank"
-                       class="btn btn-outline-success btn-sm">
-                        <i class="bi bi-play-circle me-1"></i>
-                        Demo video
-                    </a>
+                        <a href="https://youtu.be/UNy40AKA7lw"
+                           target="_blank"
+                           class="btn btn-outline-success btn-sm">
+                            <i class="bi bi-play-circle me-1"></i>
+                            Demo video
+                        </a>
+                    </div>
                 </div>
             </div>
-        </div>
 
-        <!-- OSOBNÉ WEBOVÉ CV -->
-        <div class="col-12 d-flex justify-content-center">
-            <div class="card shadow-sm w-100"
-                 style="max-width: 900px; border: 1px solid #6f42c1; border-left: 4px solid #6f42c1;">
-                <div class="card-body">
-                    <h5 class="card-title mb-1">Osobné webové CV / Portfolio</h5>
+            <!-- INVESTIČNÁ KALKULAČKA -->
+            <div class="col-12 d-flex justify-content-center">
+                <div class="card shadow-sm w-100"
+                     style="max-width: 900px; border: 1px solid #198754; border-left: 4px solid #198754;">
+                    <div class="card-body">
+                        <h5 class="card-title mb-1">Investičná kalkulačka</h5>
 
-                    <p class="card-text mt-2">
-                        Vlastná webová stránka slúžiaca ako online životopis a portfólio projektov.
-                    </p>
+                        <p class="card-text mt-2">
+                            Webová kalkulačka pre dlhodobých investorov. Porovnanie ETF indexov, odporúčanie brokerov,
+                            vývoj investície v čase. Dostupná v 5 jazykoch (SK, CZ, EN, HU, PL).
+                        </p>
 
-                    <ul>
-                        <li>verzia SK / EN</li>
-                        <li>prehľad projektov a certifikátov</li>
-                        <li>responzívny dizajn (Bootstrap)</li>
-                    </ul>
+                        <ul>
+                            <li>výpočet zloženého úročenia s infláciou</li>
+                            <li>rizikové profily a ETF odporúčania</li>
+                            <li>multijazyčná podpora</li>
+                        </ul>
 
-                    <p class="text-secondary small">
-                        <i class="bi bi-code-slash"></i> HTML
-                        <i class="bi bi-palette ms-2"></i> CSS
-                        <i class="bi bi-bootstrap ms-2"></i> Bootstrap
-                        <i class="bi bi-github ms-2"></i> GitHub Pages
-                    </p>
+                        <p class="text-secondary small">
+                            <i class="bi bi-code-slash"></i> HTML
+                            <i class="bi bi-palette ms-2"></i> CSS
+                            <i class="bi bi-filetype-js ms-2"></i> JavaScript
+                            <i class="bi bi-github ms-2"></i> GitHub Pages
+                        </p>
 
-                    <a href="https://github.com/M4H44/cv-site"
-                       target="_blank"
-                       class="btn btn-outline-primary btn-sm">
-                        <i class="bi bi-github me-1"></i>
-                        Zobraz na GitHube
-                    </a>
+                        <a href="https://m4h44.github.io/investicna_kalkulacka/index.html"
+                           target="_blank"
+                           class="btn btn-outline-primary btn-sm me-2">
+                            <i class="bi bi-box-arrow-up-right me-1"></i>
+                            Otvoriť kalkulačku
+                        </a>
+                    </div>
                 </div>
             </div>
+
+            <!-- ŽIACKA KNIŽKA -->
+            <div class="col-12 d-flex justify-content-center">
+                <div class="card shadow-sm w-100"
+                     style="max-width: 900px; border: 1px solid #fd7e14; border-left: 4px solid #fd7e14;">
+                    <div class="card-body">
+
+                        <h5 class="card-title mb-1">Žiacka knižka</h5>
+                        <span class="badge bg-success mb-3">Funkčné demo</span>
+
+                        <p class="card-text mt-2">
+                            Webová aplikácia na správu žiakov, tried, predmetov a známok.
+                            Viacrolová aplikácia (admin, učiteľ, žiak).
+                        </p>
+
+                        <ul>
+                            <li>správa používateľov, tried, predmetov a známok</li>
+                            <li>REST API, databázový návrh (MySQL/MariaDB)</li>
+                            <li>Docker prostredie (aplikácia + databáza)</li>
+                            <li>Git workflow (branch, merge, commit)</li>
+                        </ul>
+
+                        <p class="small">
+                            <i class="bi bi-node-plus text-success"></i> Node.js
+                            <i class="bi bi-gear text-primary ms-2"></i> Express / REST
+                            <i class="bi bi-database text-info ms-2"></i> MySQL
+                            <i class="bi bi-box text-warning ms-2"></i> Docker
+                            <i class="bi bi-git text-danger ms-2"></i> Git
+                        </p>
+
+                        <a href="https://github.com/M4H44/ziacka-knizka"
+                           target="_blank"
+                           class="btn btn-outline-primary btn-sm me-2">
+                            <i class="bi bi-github me-1"></i>
+                            GitHub (na vyžiadanie)
+                        </a>
+
+                        <a href="https://youtu.be/jJuftdvfCCQ"
+                           target="_blank"
+                           class="btn btn-outline-success btn-sm">
+                            <i class="bi bi-play-circle me-1"></i>
+                            Demo video
+                        </a>
+                    </div>
+                </div>
+            </div>
+
+            <!-- OSOBNÉ WEBOVÉ CV -->
+            <div class="col-12 d-flex justify-content-center">
+                <div class="card shadow-sm w-100"
+                     style="max-width: 900px; border: 1px solid #6f42c1; border-left: 4px solid #6f42c1;">
+                    <div class="card-body">
+                        <h5 class="card-title mb-1">Osobné webové CV / Portfolio</h5>
+
+                        <p class="card-text mt-2">
+                            Vlastná webová stránka slúžiaca ako online životopis a portfólio projektov.
+                        </p>
+
+                        <ul>
+                            <li>verzia SK / EN</li>
+                            <li>prehľad projektov a certifikátov</li>
+                            <li>responzívny dizajn (Bootstrap)</li>
+                        </ul>
+
+                        <p class="text-secondary small">
+                            <i class="bi bi-code-slash"></i> HTML
+                            <i class="bi bi-palette ms-2"></i> CSS
+                            <i class="bi bi-bootstrap ms-2"></i> Bootstrap
+                            <i class="bi bi-github ms-2"></i> GitHub Pages
+                        </p>
+
+                        <a href="https://github.com/M4H44/cv-site"
+                           target="_blank"
+                           class="btn btn-outline-primary btn-sm">
+                            <i class="bi bi-github me-1"></i>
+                            Zobraz na GitHube
+                        </a>
+                    </div>
+                </div>
+            </div>
+
         </div>
+    </section>
 
-    </div>
-</section>
+    <footer class="text-center text-muted py-4 border-top">
+        <div class="mb-2">
+            <a href="mailto:matohtk@gmail.com" class="text-secondary me-3" aria-label="E-mail">
+                <i class="bi bi-envelope-fill"></i>
+            </a>
+            <a href="https://www.linkedin.com/in/martin-hu%C5%A5ka-8b8707249/" target="_blank" rel="noopener"
+               class="text-secondary me-3" aria-label="LinkedIn">
+                <i class="bi bi-linkedin"></i>
+            </a>
+            <a href="https://github.com/M4H44" target="_blank" rel="noopener" class="text-secondary"
+               aria-label="GitHub">
+                <i class="bi bi-github"></i>
+            </a>
+        </div>
+        © 2026 Martin Huťka
+    </footer>
 
-<footer class="text-center text-muted py-4 border-top">
-    <div class="mb-2">
-        <a href="mailto:matohtk@gmail.com" class="text-secondary me-3" aria-label="E-mail">
-            <i class="bi bi-envelope-fill"></i>
-        </a>
-        <a href="https://www.linkedin.com/in/martin-hu%C5%A5ka-8b8707249/" target="_blank" rel="noopener"
-           class="text-secondary me-3" aria-label="LinkedIn">
-            <i class="bi bi-linkedin"></i>
-        </a>
-        <a href="https://github.com/M4H44" target="_blank" rel="noopener" class="text-secondary" aria-label="GitHub">
-            <i class="bi bi-github"></i>
-        </a>
-    </div>
-    © 2026 Martin Huťka
-</footer>
-
-<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
 </body>
 </html>

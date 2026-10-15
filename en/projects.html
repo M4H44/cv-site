@@ -4,7 +4,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <meta name="description"
-          content="Overview of Martin Huťka's projects – a corporate Java (Spring Boot) and React app with PostgreSQL, plus Node.js, Express, Docker and demo videos.">
+          content="Overview of Martin Huťka's projects – a corporate Java (Spring Boot) and React app with PostgreSQL, the Školium learning platform (Laravel, Vue), plus Node.js, Express, Docker and demo videos.">
     <title>Projects – Martin Huťka</title>
     <link rel="icon" href="../favicon.ico" type="image/x-icon">
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet">
@@ -12,279 +12,335 @@
     <link rel="stylesheet" href="../assets/css/style.css">
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/devicons/devicon@v2.16.0/devicon.min.css">
     <!-- Umami analytics -->
-    <script defer src="https://cloud.umami.is/script.js" data-website-id="a7a9dc1a-0ee0-482f-becc-7dc8a5ba9d4b"></script>
+    <script defer src="https://cloud.umami.is/script.js"
+            data-website-id="a7a9dc1a-0ee0-482f-becc-7dc8a5ba9d4b"></script>
 </head>
 <body>
 
-<nav class="navbar navbar-expand-lg navbar-dark bg-primary">
-    <div class="container">
-        <a class="navbar-brand" href="index.html">Martin Huťka</a>
-        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav"
-                aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation"><span
-                class="navbar-toggler-icon"></span></button>
-        <div class="collapse navbar-collapse" id="navbarNav">
-            <div class="navbar-nav">
-                <a class="nav-link" href="index.html">Profile</a>
-                <a class="nav-link active" href="projects.html">Projects</a>
-                <a class="nav-link" href="skills.html">Skills</a>
-                <a class="nav-link" href="certificates.html">Certificates</a>
-                <a class="nav-link" href="education.html">Education</a>
-                <a class="nav-link" href="contact.html">Contact</a>
-                <a class="nav-link" href="../index.html">SK</a>
-            </div>
-        </div>
-    </div>
-</nav>
-
-<header class="bg-light py-5">
-    <div class="container text-center">
-        <h1 class="display-6">Projects</h1>
-        <p class="text-muted">Selected projects</p>
-    </div>
-</header>
-
-<section class="container my-5">
-    <div class="row g-4">
-
-        <!-- CONTINENTAL – main project -->
-        <div class="col-12 d-flex justify-content-center">
-            <div class="card shadow-sm w-100"
-                 style="max-width: 900px; border: 1px solid #0d6efd; border-left: 4px solid #0d6efd;">
-                <div class="card-body">
-
-                    <h5 class="card-title mb-1">Corporate app – attendance &amp; shift management (Continental)</h5>
-                    <span class="badge bg-primary mb-3">Main project</span>
-                    <span class="badge bg-success mb-3">7 modules completed</span>
-
-                    <p class="card-text mt-2">
-                        Web application for managing attendance, shift planning and related processes
-                        in a corporate environment. Five modules are a rewrite of a legacy PHP system
-                        to a Java (Spring Boot 4) + React 19 architecture in TypeScript; two more
-                        I designed and built from scratch.
-                    </p>
-
-                    <ul>
-                        <li>five modules rewritten from the legacy PHP system: shift calendar, attendance,
-                            attendance rules, absences and overtime, qualification matrix
-                        </li>
-                        <li>two modules designed and built from scratch, with no PHP counterpart:
-                            user management and audit log
-                        </li>
-                        <li>audit log immutable at database level (triggers), old and new values
-                            in JSONB, IP address, deletion only after export to a file
-                        </li>
-                        <li>role hierarchy and endpoint-level authorization (Spring Security)</li>
-                        <li>login attempt rate limiting</li>
-                        <li>routing (React Router) with role-based route guards</li>
-                        <li>PostgreSQL database design, versioned migrations (Flyway) including views</li>
-                        <li>server-side PDF report generation (OpenPDF) — qualification matrix</li>
-                        <li>more than 150 tests I wrote myself, unit and integration, on backend and frontend
-                            (JUnit 5, MockMvc, @DataJpaTest, Vitest)
-                        </li>
-                        <li>Docker environment, Git workflow</li>
-                    </ul>
-
-                    <p class="small">
-                        <i class="devicon-java-plain colored"></i> Java 21
-                        <i class="devicon-spring-original colored ms-2"></i> Spring Boot
-                        <i class="devicon-react-original colored ms-2"></i> React
-                        <i class="devicon-typescript-plain colored ms-2"></i> TypeScript
-                        <i class="devicon-postgresql-plain colored ms-2"></i> PostgreSQL
-                        <i class="bi bi-box text-primary ms-2"></i> Docker
-                        <i class="bi bi-git text-danger ms-2"></i> Git
-                    </p>
-
-                    <a href="https://github.com/M4H44/contiapp-java"
-                       target="_blank"
-                       class="btn btn-outline-primary btn-sm me-2">
-                        <i class="bi bi-github me-1"></i>
-                        GitHub (on request)
-                    </a>
-
+    <nav class="navbar navbar-expand-lg navbar-dark bg-primary">
+        <div class="container">
+            <a class="navbar-brand" href="index.html">Martin Huťka</a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav"
+                    aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation"><span
+                    class="navbar-toggler-icon"></span></button>
+            <div class="collapse navbar-collapse" id="navbarNav">
+                <div class="navbar-nav">
+                    <a class="nav-link" href="index.html">Profile</a>
+                    <a class="nav-link active" href="projects.html">Projects</a>
+                    <a class="nav-link" href="skills.html">Skills</a>
+                    <a class="nav-link" href="certificates.html">Certificates</a>
+                    <a class="nav-link" href="education.html">Education</a>
+                    <a class="nav-link" href="contact.html">Contact</a>
+                    <a class="nav-link" href="../index.html">SK</a>
                 </div>
             </div>
         </div>
+    </nav>
 
-        <!-- RESERVATION SYSTEM -->
-        <div class="col-12 d-flex justify-content-center">
-            <div class="card shadow-sm w-100"
-                 style="max-width: 900px; border: 1px solid #20c997; border-left: 4px solid #20c997;">
-                <div class="card-body">
+    <header class="bg-light py-5">
+        <div class="container text-center">
+            <h1 class="display-6">Projects</h1>
+            <p class="text-muted">Selected projects</p>
+        </div>
+    </header>
 
-                    <h5 class="card-title mb-1">Reservation System for Services</h5>
-                    <span class="badge bg-secondary mb-3">Commercial project – in development</span>
+    <section class="container my-5">
+        <div class="row g-4">
 
-                    <p class="card-text mt-2">
-                        Universal reservation system designed for small businesses and service providers
-                        (fitness trainers, salons, workshops, service centers).
-                    </p>
+            <!-- CONTINENTAL – main project -->
+            <div class="col-12 d-flex justify-content-center">
+                <div class="card shadow-sm w-100"
+                     style="max-width: 900px; border: 1px solid #0d6efd; border-left: 4px solid #0d6efd;">
+                    <div class="card-body">
 
-                    <ul>
-                        <li>service and time-slot management</li>
-                        <li>reservation overview and administration</li>
-                        <li>admin-only interface (current stage)</li>
-                        <li>designed for future customer booking flow</li>
-                    </ul>
+                        <h5 class="card-title mb-1">Corporate app – attendance &amp; shift management (Continental)</h5>
+                        <span class="badge bg-primary mb-3">Main project</span>
+                        <span class="badge bg-success mb-3">8 modules completed</span>
 
-                    <p class="small">
-                        <i class="bi bi-node-plus text-success"></i> Node.js
-                        <i class="bi bi-gear text-primary ms-2"></i> Express
-                        <i class="bi bi-database text-info ms-2"></i> MySQL
-                        <i class="bi bi-box text-warning ms-2"></i> Docker
-                        <i class="bi bi-git text-danger ms-2"></i> Git
-                    </p>
+                        <p class="card-text mt-2">
+                            Web application for managing attendance, shift planning and related processes
+                            in a corporate environment. Five modules are a rewrite of a legacy PHP system
+                            to a Java (Spring Boot 4) + React 19 architecture in TypeScript; three more
+                            I designed and built from scratch.
+                        </p>
 
-                    <a href="https://github.com/M4H44/salon-booking"
-                       target="_blank"
-                       class="btn btn-outline-primary btn-sm me-2">
-                        <i class="bi bi-github me-1"></i>
-                        GitHub (on request)
-                    </a>
+                        <ul>
+                            <li>five modules rewritten from the legacy PHP system: shift calendar, attendance,
+                                attendance rules, absences and overtime, qualification matrix
+                            </li>
+                            <li>three modules designed and built from scratch, with no PHP counterpart:
+                                user management, audit log and employee training
+                            </li>
+                            <li>training: HR uploads materials (PDF, video up to 500 MB) and assigns them by
+                                company, department, role, team or individual; employees confirm receipt with their
+                                password
+                            </li>
+                            <li>audit log immutable at database level (triggers), old and new values
+                                in JSONB, IP address, deletion only after export to a file
+                            </li>
+                            <li>GDPR consent: without consent a request is recorded anonymously, the backend
+                                decides whether the name is shown
+                            </li>
+                            <li>password security: 6-month expiry, last 3 passwords blocked
+                                (compared via BCrypt) and a similarity check against the previous password
+                            </li>
+                            <li>role hierarchy and endpoint-level authorization (Spring Security)</li>
+                            <li>login attempt rate limiting</li>
+                            <li>routing (React Router) with role-based route guards</li>
+                            <li>PostgreSQL database design, versioned migrations (Flyway) including views</li>
+                            <li>server-side PDF report generation (OpenPDF) — qualification matrix</li>
+                            <li>more than 350 tests I wrote myself, unit and integration, on backend and frontend
+                                (JUnit 5, MockMvc, @DataJpaTest, Vitest)
+                            </li>
+                            <li>Docker environment, Git workflow</li>
+                        </ul>
 
-                    <a href="https://youtu.be/UNy40AKA7lw"
-                       target="_blank"
-                       class="btn btn-outline-success btn-sm">
-                        <i class="bi bi-play-circle me-1"></i>
-                        Demo video
-                    </a>
+                        <p class="small">
+                            <i class="devicon-java-plain colored"></i> Java 21
+                            <i class="devicon-spring-original colored ms-2"></i> Spring Boot
+                            <i class="devicon-react-original colored ms-2"></i> React
+                            <i class="devicon-typescript-plain colored ms-2"></i> TypeScript
+                            <i class="devicon-postgresql-plain colored ms-2"></i> PostgreSQL
+                            <i class="bi bi-box text-primary ms-2"></i> Docker
+                            <i class="bi bi-git text-danger ms-2"></i> Git
+                        </p>
+                        <a href="https://github.com/M4H44/contiapp-java"
+                           target="_blank"
+                           class="btn btn-outline-primary btn-sm me-2">
+                            <i class="bi bi-github me-1"></i>
+                            GitHub (on request)
+                        </a>
+
+                    </div>
                 </div>
             </div>
-        </div>
 
-        <!-- INVESTMENT CALCULATOR -->
-        <div class="col-12 d-flex justify-content-center">
-            <div class="card shadow-sm w-100"
-                 style="max-width: 900px; border: 1px solid #198754; border-left: 4px solid #198754;">
-                <div class="card-body">
-                    <h5 class="card-title mb-1">Investment Calculator</h5>
+            <!-- ŠKOLIUM – collaboration -->
+            <div class="col-12 d-flex justify-content-center">
+                <div class="card shadow-sm w-100"
+                     style="max-width: 900px; border: 1px solid #42b883; border-left: 4px solid #42b883;">
+                    <div class="card-body">
 
-                    <p class="card-text mt-2">
-                        Web calculator for long-term investors. Compares ETF indices, recommends brokers,
-                        and visualizes investment growth over time. Available in 5 languages (SK, CZ, EN, HU, PL).
-                    </p>
+                        <h5 class="card-title mb-1">Školium – learning platform for schools</h5>
+                        <span class="badge bg-info text-dark mb-3">Development collaboration</span>
+                        <span class="badge bg-success mb-3">In production</span>
+                        <p class="card-text mt-2">
+                            Web platform for learning and practice for students, teachers and parents
+                            (tests, progress tracking, an avatar for motivation). I joined the team as a
+                            developer — my changes go straight to production on skolium.sk via GitHub Actions.
+                        </p>
+                        <ul>
+                            <li>production e-mail setup via GitHub Actions secrets and the deploy script</li>
+                            <li>Slovak localization of Laravel (laravel-lang) including server deployment</li>
+                            <li>CI changes: removed <code>vendor/</code> from git, dependencies installed with Composer
+                                in the
+                                pipeline
+                            </li>
+                            <li>bug fixes on the parent dashboard (child success rate, invitations, contrast)</li>
+                            <li>testing the avatar state logic and reporting the bugs found</li>
+                        </ul>
+                        <p class="small">
+                            <i class="devicon-laravel-original colored"></i> Laravel
+                            <i class="devicon-php-plain colored ms-2"></i> PHP
+                            <i class="devicon-vuejs-plain colored ms-2"></i> Vue 3
+                            <i class="devicon-typescript-plain colored ms-2"></i> TypeScript
+                            <i class="devicon-tailwindcss-original colored ms-2"></i> Tailwind
+                            <i class="devicon-mysql-plain colored ms-2"></i> MySQL
+                            <i class="devicon-githubactions-plain colored ms-2"></i> GitHub Actions
+                        </p>
+                        <a href="https://www.skolium.sk/"
+                           target="_blank"
+                           class="btn btn-outline-success btn-sm">
+                            <i class="bi bi-globe me-1"></i>
+                            Open website
+                        </a>
 
-                    <ul>
-                        <li>compound interest calculation with inflation</li>
-                        <li>risk profiles and ETF recommendations</li>
-                        <li>multilingual support</li>
-                    </ul>
-
-                    <p class="text-secondary small">
-                        <i class="bi bi-code-slash"></i> HTML
-                        <i class="bi bi-palette ms-2"></i> CSS
-                        <i class="bi bi-filetype-js ms-2"></i> JavaScript
-                        <i class="bi bi-github ms-2"></i> GitHub Pages
-                    </p>
-
-                    <a href="https://m4h44.github.io/investicna_kalkulacka/index.html"
-                       target="_blank"
-                       class="btn btn-outline-primary btn-sm me-2">
-                        <i class="bi bi-box-arrow-up-right me-1"></i>
-                        Open calculator
-                    </a>
+                    </div>
                 </div>
             </div>
-        </div>
+            <!-- RESERVATION SYSTEM -->
+            <div class="col-12 d-flex justify-content-center">
+                <div class="card shadow-sm w-100"
+                     style="max-width: 900px; border: 1px solid #20c997; border-left: 4px solid #20c997;">
+                    <div class="card-body">
 
-        <!-- STUDENT GRADEBOOK -->
-        <div class="col-12 d-flex justify-content-center">
-            <div class="card shadow-sm w-100"
-                 style="max-width: 900px; border: 1px solid #fd7e14; border-left: 4px solid #fd7e14;">
-                <div class="card-body">
+                        <h5 class="card-title mb-1">Reservation system for commercial services</h5>
+                        <span class="badge bg-secondary mb-3">In development</span>
 
-                    <h5 class="card-title mb-1">Student Gradebook</h5>
-                    <span class="badge bg-success mb-3">Working demo</span>
+                        <p class="card-text mt-2">
+                            Web application for managing reservations of various services (tyre services, fitness
+                            centers,
+                            trainers and more).
+                            Currently in development.
+                        </p>
 
-                    <p class="card-text mt-2">
-                        Web application for managing students, classes, subjects, and grades.
-                        Multi-role system (admin, teacher, student).
-                    </p>
+                        <ul>
+                            <li>reservations and management of available time slots</li>
+                            <li>management of users and their reservations</li>
+                            <li>activating/deactivating services</li>
+                            <li>user and administrator interface</li>
+                        </ul>
 
-                    <ul>
-                        <li>user, class, subject, and grade management</li>
-                        <li>REST API, database design (MySQL / MariaDB)</li>
-                        <li>Docker environment (application + database)</li>
-                        <li>Git workflow (branching, merging, commits)</li>
-                    </ul>
+                        <p class="small">
+                            <i class="bi bi-node-plus text-success"></i> Node.js
+                            <i class="bi bi-gear text-primary ms-2"></i> Express
+                            <i class="bi bi-database text-info ms-2"></i> MySQL
+                            <i class="bi bi-box text-warning ms-2"></i> Docker
+                            <i class="bi bi-git text-danger ms-2"></i> Git
+                        </p>
 
-                    <p class="small">
-                        <i class="bi bi-node-plus text-success"></i> Node.js
-                        <i class="bi bi-gear text-primary ms-2"></i> Express / REST
-                        <i class="bi bi-database text-info ms-2"></i> MySQL
-                        <i class="bi bi-box text-warning ms-2"></i> Docker
-                        <i class="bi bi-git text-danger ms-2"></i> Git
-                    </p>
+                        <a href="https://github.com/M4H44/salon-booking"
+                           target="_blank"
+                           class="btn btn-outline-primary btn-sm me-2">
+                            <i class="bi bi-github me-1"></i>
+                            GitHub (on request)
+                        </a>
 
-                    <a href="https://github.com/M4H44/ziacka-knizka"
-                       target="_blank"
-                       class="btn btn-outline-primary btn-sm me-2">
-                        <i class="bi bi-github me-1"></i>
-                        GitHub (on request)
-                    </a>
-
-                    <a href="https://youtu.be/jJuftdvfCCQ"
-                       target="_blank"
-                       class="btn btn-outline-success btn-sm">
-                        <i class="bi bi-play-circle me-1"></i>
-                        Demo video
-                    </a>
+                        <a href="https://youtu.be/UNy40AKA7lw"
+                           target="_blank"
+                           class="btn btn-outline-success btn-sm">
+                            <i class="bi bi-play-circle me-1"></i>
+                            Demo video
+                        </a>
+                    </div>
                 </div>
             </div>
-        </div>
 
-        <!-- WEB CV -->
-        <div class="col-12 d-flex justify-content-center">
-            <div class="card shadow-sm w-100"
-                 style="max-width: 900px; border: 1px solid #6f42c1; border-left: 4px solid #6f42c1;">
-                <div class="card-body">
-                    <h5 class="card-title mb-1">Personal Web CV / Portfolio</h5>
+            <!-- INVESTMENT CALCULATOR -->
+            <div class="col-12 d-flex justify-content-center">
+                <div class="card shadow-sm w-100"
+                     style="max-width: 900px; border: 1px solid #198754; border-left: 4px solid #198754;">
+                    <div class="card-body">
+                        <h5 class="card-title mb-1">Investment calculator</h5>
 
-                    <p class="card-text mt-2">
-                        Personal website serving as an online CV and project portfolio.
-                    </p>
+                        <p class="card-text mt-2">
+                            Web calculator for long-term investors. ETF index comparison, broker recommendations,
+                            investment growth over time. Available in 5 languages (SK, CZ, EN, HU, PL).
+                        </p>
 
-                    <ul>
-                        <li>SK / EN versions</li>
-                        <li>overview of projects and certificates</li>
-                        <li>responsive design (Bootstrap)</li>
-                    </ul>
+                        <ul>
+                            <li>compound interest calculation with inflation</li>
+                            <li>risk profiles and ETF recommendations</li>
+                            <li>multilingual support</li>
+                        </ul>
 
-                    <p class="text-secondary small">
-                        <i class="bi bi-code-slash"></i> HTML
-                        <i class="bi bi-palette ms-2"></i> CSS
-                        <i class="bi bi-bootstrap ms-2"></i> Bootstrap
-                        <i class="bi bi-github ms-2"></i> GitHub Pages
-                    </p>
+                        <p class="text-secondary small">
+                            <i class="bi bi-code-slash"></i> HTML
+                            <i class="bi bi-palette ms-2"></i> CSS
+                            <i class="bi bi-filetype-js ms-2"></i> JavaScript
+                            <i class="bi bi-github ms-2"></i> GitHub Pages
+                        </p>
 
-                    <a href="https://github.com/M4H44/cv-site"
-                       target="_blank"
-                       class="btn btn-outline-primary btn-sm">
-                        <i class="bi bi-github me-1"></i>
-                        View on GitHub
-                    </a>
+                        <a href="https://m4h44.github.io/investicna_kalkulacka/index.html"
+                           target="_blank"
+                           class="btn btn-outline-primary btn-sm me-2">
+                            <i class="bi bi-box-arrow-up-right me-1"></i>
+                            Open calculator
+                        </a>
+                    </div>
                 </div>
             </div>
+
+            <!-- STUDENT GRADEBOOK -->
+            <div class="col-12 d-flex justify-content-center">
+                <div class="card shadow-sm w-100"
+                     style="max-width: 900px; border: 1px solid #fd7e14; border-left: 4px solid #fd7e14;">
+                    <div class="card-body">
+
+                        <h5 class="card-title mb-1">Student gradebook</h5>
+                        <span class="badge bg-success mb-3">Working demo</span>
+
+                        <p class="card-text mt-2">
+                            Web application for managing students, classes, subjects and grades.
+                            Multi-role application (admin, teacher, student).
+                        </p>
+
+                        <ul>
+                            <li>management of users, classes, subjects and grades</li>
+                            <li>REST API, database design (MySQL/MariaDB)</li>
+                            <li>Docker environment (application + database)</li>
+                            <li>Git workflow (branch, merge, commit)</li>
+                        </ul>
+
+                        <p class="small">
+                            <i class="bi bi-node-plus text-success"></i> Node.js
+                            <i class="bi bi-gear text-primary ms-2"></i> Express / REST
+                            <i class="bi bi-database text-info ms-2"></i> MySQL
+                            <i class="bi bi-box text-warning ms-2"></i> Docker
+                            <i class="bi bi-git text-danger ms-2"></i> Git
+                        </p>
+
+                        <a href="https://github.com/M4H44/ziacka-knizka"
+                           target="_blank"
+                           class="btn btn-outline-primary btn-sm me-2">
+                            <i class="bi bi-github me-1"></i>
+                            GitHub (on request)
+                        </a>
+
+                        <a href="https://youtu.be/jJuftdvfCCQ"
+                           target="_blank"
+                           class="btn btn-outline-success btn-sm">
+                            <i class="bi bi-play-circle me-1"></i>
+                            Demo video
+                        </a>
+                    </div>
+                </div>
+            </div>
+
+            <!-- PERSONAL WEB CV -->
+            <div class="col-12 d-flex justify-content-center">
+                <div class="card shadow-sm w-100"
+                     style="max-width: 900px; border: 1px solid #6f42c1; border-left: 4px solid #6f42c1;">
+                    <div class="card-body">
+                        <h5 class="card-title mb-1">Personal web CV / Portfolio</h5>
+
+                        <p class="card-text mt-2">
+                            Personal website serving as an online CV and project portfolio.
+                        </p>
+
+                        <ul>
+                            <li>SK / EN version</li>
+                            <li>overview of projects and certificates</li>
+                            <li>responsive design (Bootstrap)</li>
+                        </ul>
+
+                        <p class="text-secondary small">
+                            <i class="bi bi-code-slash"></i> HTML
+                            <i class="bi bi-palette ms-2"></i> CSS
+                            <i class="bi bi-bootstrap ms-2"></i> Bootstrap
+                            <i class="bi bi-github ms-2"></i> GitHub Pages
+                        </p>
+
+                        <a href="https://github.com/M4H44/cv-site"
+                           target="_blank"
+                           class="btn btn-outline-primary btn-sm">
+                            <i class="bi bi-github me-1"></i>
+                            View on GitHub
+                        </a>
+                    </div>
+                </div>
+            </div>
+
         </div>
+    </section>
 
-    </div>
-</section>
+    <footer class="text-center text-muted py-4 border-top">
+        <div class="mb-2">
+            <a href="mailto:matohtk@gmail.com" class="text-secondary me-3" aria-label="E-mail">
+                <i class="bi bi-envelope-fill"></i>
+            </a>
+            <a href="https://www.linkedin.com/in/martin-hu%C5%A5ka-8b8707249/" target="_blank" rel="noopener"
+               class="text-secondary me-3" aria-label="LinkedIn">
+                <i class="bi bi-linkedin"></i>
+            </a>
+            <a href="https://github.com/M4H44" target="_blank" rel="noopener" class="text-secondary"
+               aria-label="GitHub">
+                <i class="bi bi-github"></i>
+            </a>
+        </div>
+        © 2026 Martin Huťka
+    </footer>
 
-<footer class="text-center text-muted py-4 border-top">
-    <div class="mb-2">
-        <a href="mailto:matohtk@gmail.com" class="text-secondary me-3" aria-label="E-mail">
-            <i class="bi bi-envelope-fill"></i>
-        </a>
-        <a href="https://www.linkedin.com/in/martin-hu%C5%A5ka-8b8707249/" target="_blank" rel="noopener"
-           class="text-secondary me-3" aria-label="LinkedIn">
-            <i class="bi bi-linkedin"></i>
-        </a>
-        <a href="https://github.com/M4H44" target="_blank" rel="noopener" class="text-secondary" aria-label="GitHub">
-            <i class="bi bi-github"></i>
-        </a>
-    </div>
-    © 2026 Martin Huťka
-</footer>
-
-<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
 </body>
 </html>
