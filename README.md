@@ -28,7 +28,7 @@ recruiters and hiring managers as a quick technical profile preview.
 
 ## Live Website
 
-👉 https://m4h44.github.io/cv-site/en/index.html
+👉 https://martinhutka.is-a.dev/en/index.html
 
 Deployed using **GitHub Pages**.
 
@@ -78,7 +78,7 @@ náborových manažérov ako rýchly prehľad profilu.
 
 ## Živá verzia webu
 
-👉 https://m4h44.github.io/cv-site/
+👉 https://martinhutka.is-a.dev/
 
 Nasadené pomocou **GitHub Pages**.
 
