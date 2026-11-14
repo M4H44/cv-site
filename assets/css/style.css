@@ -48,3 +48,8 @@ header.bg-light {
         transform: none;
     }
 }
+
+/* Buttons in cards: keep a gap when they wrap onto the next line (mobile) */
+.card-body .btn {
+    margin-bottom: .5rem;
+}
