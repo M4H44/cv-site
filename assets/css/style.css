@@ -131,3 +131,23 @@ header.bg-light {
     flex-shrink: 0;
     vertical-align: -.125em;
 }
+
+/* Snímky v galérii sa dajú otvoriť v plnej veľkosti */
+.zoomable {
+    cursor: zoom-in;
+}
+
+/* Na mobile ovládanie galérie pod obrázok, nech neprekrýva snímku */
+@media (max-width: 767.98px) {
+    #contiCarousel {
+        text-align: center;
+    }
+
+    #contiCarousel .carousel-control-prev,
+    #contiCarousel .carousel-control-next {
+        position: static;
+        display: inline-flex;
+        width: auto;
+        margin: 1rem .75rem 0;
+    }
+}
