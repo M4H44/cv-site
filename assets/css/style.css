@@ -150,3 +150,35 @@ header.bg-light {
         margin: 1rem .75rem 0;
     }
 }
+
+/* Farebný rámik karty, vľavo hrubší */
+.card-accent {
+    border: 1px solid var(--accent);
+    border-left-width: 4px;
+}
+
+.accent-blue { --accent: #0d6efd; }
+.accent-java { --accent: #f89820; }
+.accent-react { --accent: #61dafb; }
+.accent-gray { --accent: #6c757d; }
+.accent-green { --accent: #198754; }
+.accent-vue { --accent: #42b883; }
+.accent-teal { --accent: #20c997; }
+.accent-postgres { --accent: #336791; }
+.accent-node { --accent: #3c873a; }
+
+/* Užšie karty projektov */
+.mw-900 {
+    max-width: 900px;
+}
+
+/* Výška snímok v galérii */
+.gallery-img {
+    max-height: 70vh;
+}
+
+/* Farby značiek pri ikonách */
+.text-node { color: #3c873a; }
+.text-docker { color: #0db7ed; }
+.text-git { color: #f34f29; }
+.text-mysql { color: #00758f; }

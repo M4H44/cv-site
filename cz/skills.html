@@ -227,8 +227,7 @@
 
                 <!-- BACKEND — JAVA -->
                 <div class="col-md-5">
-                    <div class="card h-100 text-center shadow-sm"
-                         style="border: 1px solid #f89820; border-left: 4px solid #f89820;">
+                    <div class="card h-100 text-center shadow-sm card-accent accent-java">
                         <div class="card-body">
                             <h2 class="h5 fw-semibold mb-3">
                                 <svg class="tech-icon me-2" aria-hidden="true" focusable="false">
@@ -301,8 +300,7 @@
 
                 <!-- FRONTEND -->
                 <div class="col-md-5">
-                    <div class="card h-100 text-center shadow-sm"
-                         style="border: 1px solid #61DAFB; border-left: 4px solid #61DAFB;">
+                    <div class="card h-100 text-center shadow-sm card-accent accent-react">
                         <div class="card-body">
                             <h2 class="h5 fw-semibold mb-3">
                                 <svg class="tech-icon me-2" aria-hidden="true" focusable="false">
@@ -368,8 +366,7 @@
 
                 <!-- DATABÁZY -->
                 <div class="col-md-5">
-                    <div class="card h-100 text-center shadow-sm"
-                         style="border: 1px solid #336791; border-left: 4px solid #336791;">
+                    <div class="card h-100 text-center shadow-sm card-accent accent-postgres">
                         <div class="card-body">
                             <h2 class="h5 fw-semibold mb-3">
                                 <svg class="tech-icon me-2" aria-hidden="true" focusable="false">
@@ -386,7 +383,7 @@
                                     PostgreSQL
                                 </li>
                                 <li>
-                                    <svg class="bi" style="color:#00758F" aria-hidden="true" focusable="false">
+                                    <svg class="bi text-mysql" aria-hidden="true" focusable="false">
                                         <use href="#bi-database-fill"/>
                                     </svg>
                                     MySQL / MariaDB
@@ -411,8 +408,7 @@
 
                 <!-- TESTOVANIE -->
                 <div class="col-md-5">
-                    <div class="card h-100 text-center shadow-sm"
-                         style="border: 1px solid #198754; border-left: 4px solid #198754;">
+                    <div class="card h-100 text-center shadow-sm card-accent accent-green">
                         <div class="card-body">
                             <h2 class="h5 fw-semibold mb-3">
                                 <svg class="bi text-success me-2" aria-hidden="true" focusable="false">
@@ -459,11 +455,10 @@
 
                 <!-- BACKEND — PHP A NODE.JS -->
                 <div class="col-md-5">
-                    <div class="card h-100 text-center shadow-sm"
-                         style="border: 1px solid #3C873A; border-left: 4px solid #3C873A;">
+                    <div class="card h-100 text-center shadow-sm card-accent accent-node">
                         <div class="card-body">
                             <h2 class="h5 fw-semibold mb-3">
-                                <svg class="bi me-2" style="color:#3C873A" aria-hidden="true" focusable="false">
+                                <svg class="bi me-2 text-node" aria-hidden="true" focusable="false">
                                     <use href="#bi-node-plus-fill"/>
                                 </svg>
                                 Backend — PHP a Node.js
@@ -483,7 +478,7 @@
                                     Odesílání e-mailů (SMTP), lokalizace
                                 </li>
                                 <li>
-                                    <svg class="bi" style="color:#3C873A" aria-hidden="true" focusable="false">
+                                    <svg class="bi text-node" aria-hidden="true" focusable="false">
                                         <use href="#bi-node-plus-fill"/>
                                     </svg>
                                     Node.js, Express
@@ -513,8 +508,7 @@
 
                 <!-- NÁSTROJE A PROSTREDIE -->
                 <div class="col-md-5">
-                    <div class="card h-100 text-center shadow-sm"
-                         style="border: 1px solid #6c757d; border-left: 4px solid #6c757d;">
+                    <div class="card h-100 text-center shadow-sm card-accent accent-gray">
                         <div class="card-body">
                             <h2 class="h5 fw-semibold mb-3">
                                 <svg class="bi text-secondary me-2" aria-hidden="true" focusable="false">
@@ -525,7 +519,7 @@
 
                             <ul class="list-unstyled">
                                 <li>
-                                    <svg class="bi" style="color:#f34f29" aria-hidden="true" focusable="false">
+                                    <svg class="bi text-git" aria-hidden="true" focusable="false">
                                         <use href="#bi-git"/>
                                     </svg>
                                     Git — větvení, merge, pull requesty
@@ -543,7 +537,7 @@
                                     Maven, npm, Composer — build a závislosti
                                 </li>
                                 <li>
-                                    <svg class="bi" style="color:#0db7ed" aria-hidden="true" focusable="false">
+                                    <svg class="bi text-docker" aria-hidden="true" focusable="false">
                                         <use href="#bi-box-fill"/>
                                     </svg>
                                     Docker, docker-compose
@@ -598,17 +592,7 @@
     </footer>
 
 
-    <script>
-        // zapamätanie zvoleného jazyka
-        document.querySelectorAll('a[data-lang]').forEach(function (a) {
-            a.addEventListener('click', function () {
-                try {
-                    localStorage.setItem('lang', a.dataset.lang);
-                } catch (e) {
-                }
-            });
-        });
-    </script>
+    <script defer src="../assets/js/main.js"></script>
     <script defer src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"
             integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz"
             crossorigin="anonymous"></script>
