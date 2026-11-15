@@ -54,8 +54,8 @@ header.bg-light {
     margin-bottom: .5rem;
 }
 
-/* Navigation contrast (WCAG AA): darker blue bar, muted inactive links, white active link */
-/* One darker brand blue everywhere: navbar, bg-primary, text-primary, links, buttons */
+/* Jednotná tmavšia modrá (lišta, bg-primary, text-primary, odkazy, tlačidlá);
+   v lište stlmené neaktívne odkazy a biely aktívny kvôli kontrastu WCAG AA */
 :root {
     --bs-primary: #084298;
     --bs-primary-rgb: 8, 66, 152;
@@ -105,4 +105,20 @@ header.bg-light {
     height: 1em;
     flex-shrink: 0;
     vertical-align: -.125em;
+}
+
+/* Šípky galérie: biela šípka v tmavom krúžku, aby bola čitateľná na každej snímke */
+#contiCarousel .carousel-control-prev,
+#contiCarousel .carousel-control-next {
+    width: 3.5rem;
+    opacity: 1;
+}
+
+#contiCarousel .carousel-control-prev-icon,
+#contiCarousel .carousel-control-next-icon {
+    width: 2.5rem;
+    height: 2.5rem;
+    background-color: rgba(0, 0, 0, .6);
+    background-size: 50%;
+    border-radius: 50%;
 }
