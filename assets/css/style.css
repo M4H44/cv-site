@@ -53,3 +53,56 @@ header.bg-light {
 .card-body .btn {
     margin-bottom: .5rem;
 }
+
+/* Navigation contrast (WCAG AA): darker blue bar, muted inactive links, white active link */
+/* One darker brand blue everywhere: navbar, bg-primary, text-primary, links, buttons */
+:root {
+    --bs-primary: #084298;
+    --bs-primary-rgb: 8, 66, 152;
+    --bs-link-color: #084298;
+    --bs-link-color-rgb: 8, 66, 152;
+    --bs-link-hover-color: #06357a;
+    --bs-link-hover-color-rgb: 6, 53, 122;
+}
+
+.btn-primary {
+    --bs-btn-bg: #084298;
+    --bs-btn-border-color: #084298;
+    --bs-btn-hover-bg: #06357a;
+    --bs-btn-hover-border-color: #06357a;
+    --bs-btn-active-bg: #052c65;
+    --bs-btn-active-border-color: #052c65;
+    --bs-btn-disabled-bg: #084298;
+    --bs-btn-disabled-border-color: #084298;
+    --bs-btn-focus-shadow-rgb: 8, 66, 152;
+}
+
+.btn-outline-primary {
+    --bs-btn-color: #084298;
+    --bs-btn-border-color: #084298;
+    --bs-btn-hover-bg: #084298;
+    --bs-btn-hover-border-color: #084298;
+    --bs-btn-active-bg: #084298;
+    --bs-btn-active-border-color: #084298;
+    --bs-btn-disabled-color: #084298;
+    --bs-btn-disabled-border-color: #084298;
+    --bs-btn-focus-shadow-rgb: 8, 66, 152;
+}
+
+.navbar-dark {
+    --bs-navbar-color: #b5c6e0;
+    --bs-navbar-hover-color: #fff;
+    --bs-navbar-active-color: #fff;
+}
+
+.navbar-dark .navbar-nav .nav-link.active {
+    font-weight: 500;
+}
+
+/* Tech icons from the inline SVG sprite: sized like a letter, aligned with the text next to them */
+.tech-icon {
+    width: 1em;
+    height: 1em;
+    flex-shrink: 0;
+    vertical-align: -.125em;
+}
