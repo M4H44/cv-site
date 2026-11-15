@@ -35,9 +35,15 @@
 <body>
     <!-- Ikony vložené priamo do stránky (Bootstrap Icons) namiesto ikonového fontu z CDN -->
     <svg xmlns="http://www.w3.org/2000/svg" class="d-none" aria-hidden="true">
-        <symbol id="bi-envelope-fill" viewBox="0 0 16 16"><path d="M0 3.6A2 2 0 0 1 2 2h12a2 2 0 0 1 2 1.6L8 8.4zm0 1.1v7.1l5.8-3.6zm6.8 4.1-6.6 4A2 2 0 0 0 2 14h12a2 2 0 0 0 1.8-1.1l-6.6-4-1.2.7zm3.4-.6 5.8 3.6V4.7z"/></symbol>
-        <symbol id="bi-linkedin" viewBox="0 0 16 16"><path d="M0 1.1Q0 .1 1.2 0h13.6Q16 .1 16 1.1V15q0 1-1.2 1.1H1.2Q0 15.9 0 14.9zm5 12.3V6.2H2.4v7.2zM3.6 5.2Q5.1 5 5.1 3.9T3.8 2.7c-1.3-.1-1.4.5-1.4 1.2q0 1.2 1.3 1.3zm5 8.2V8.8q.3-.9 1.3-1 1.2.2 1.2 1.7v3.9h2.4V9.3q-.2-3.4-2.8-3.3C9.5 6 9 6.7 8.7 7.2v-1H6.3v7.2z"/></symbol>
-        <symbol id="bi-github" viewBox="0 0 16 16"><path d="M8 0a8 8 0 0 0-2.5 15.6q.6 0 .5-.4v-1.5c-2 .4-2.5-.5-2.7-1 0-.1-.5-.9-.8-1-.3-.2-.7-.6 0-.6s1 .6 1.2.8c.7 1.2 1.9 1 2.4.7q0-.8.5-1c-1.8-.3-3.7-1-3.7-4q0-1.3.8-2.2c0-.2-.3-1 .1-2 0 0 .7-.3 2.2.7a7 7 0 0 1 4 0c1.5-1 2.2-.8 2.2-.8.5 1.1.2 2 .1 2.1q.8.9.8 2.2c0 3-1.9 3.7-3.6 4q.5.3.5 1.4v2.2q0 .4.5.4A8 8 0 0 0 16 8a8 8 0 0 0-8-8"/></symbol>
+        <symbol id="bi-envelope-fill" viewBox="0 0 16 16">
+            <path d="M0 3.6A2 2 0 0 1 2 2h12a2 2 0 0 1 2 1.6L8 8.4zm0 1.1v7.1l5.8-3.6zm6.8 4.1-6.6 4A2 2 0 0 0 2 14h12a2 2 0 0 0 1.8-1.1l-6.6-4-1.2.7zm3.4-.6 5.8 3.6V4.7z"/>
+        </symbol>
+        <symbol id="bi-linkedin" viewBox="0 0 16 16">
+            <path d="M0 1.1Q0 .1 1.2 0h13.6Q16 .1 16 1.1V15q0 1-1.2 1.1H1.2Q0 15.9 0 14.9zm5 12.3V6.2H2.4v7.2zM3.6 5.2Q5.1 5 5.1 3.9T3.8 2.7c-1.3-.1-1.4.5-1.4 1.2q0 1.2 1.3 1.3zm5 8.2V8.8q.3-.9 1.3-1 1.2.2 1.2 1.7v3.9h2.4V9.3q-.2-3.4-2.8-3.3C9.5 6 9 6.7 8.7 7.2v-1H6.3v7.2z"/>
+        </symbol>
+        <symbol id="bi-github" viewBox="0 0 16 16">
+            <path d="M8 0a8 8 0 0 0-2.5 15.6q.6 0 .5-.4v-1.5c-2 .4-2.5-.5-2.7-1 0-.1-.5-.9-.8-1-.3-.2-.7-.6 0-.6s1 .6 1.2.8c.7 1.2 1.9 1 2.4.7q0-.8.5-1c-1.8-.3-3.7-1-3.7-4q0-1.3.8-2.2c0-.2-.3-1 .1-2 0 0 .7-.3 2.2.7a7 7 0 0 1 4 0c1.5-1 2.2-.8 2.2-.8.5 1.1.2 2 .1 2.1q.8.9.8 2.2c0 3-1.9 3.7-3.6 4q.5.3.5 1.4v2.2q0 .4.5.4A8 8 0 0 0 16 8a8 8 0 0 0-8-8"/>
+        </symbol>
     </svg>
 
     <nav class="navbar navbar-expand-lg navbar-dark bg-primary">
@@ -62,169 +68,187 @@
     </nav>
     <main>
 
-    <header class="bg-light py-5">
-        <div class="container text-center">
-            <h1 class="display-6">Certificates</h1>
-            <p class="text-muted">Education and professional courses</p>
-        </div>
-    </header>
+        <header class="bg-light py-5">
+            <div class="container text-center">
+                <h1 class="display-6">Certificates</h1>
+                <p class="text-muted">Education and professional courses</p>
+            </div>
+        </header>
 
-    <section class="container my-5">
+        <section class="container my-5">
 
-        <!-- MAIN CERTIFICATE – CENTER -->
-        <div class="row justify-content-center mb-5">
-            <div class="col-lg-8">
+            <!-- MAIN CERTIFICATE – CENTER -->
+            <div class="row justify-content-center mb-5">
+                <div class="col-lg-8">
 
-                <div class="card shadow-sm" style="border: 1px solid #0d6efd; border-left: 4px solid #0d6efd;">
-                    <div class="card-body text-center">
+                    <div class="card shadow-sm" style="border: 1px solid #0d6efd; border-left: 4px solid #0d6efd;">
+                        <div class="card-body text-center">
 
-                        <h2 class="card-title h5 mb-2">
-                            Web Application Development in Java
-                        </h2>
+                            <h2 class="card-title h5 mb-2">
+                                Web Application Development in Java
+                            </h2>
 
-                        <p class="mb-1"><strong>ITnetwork Academy Slovakia s.r.o.</strong></p>
-                        <p class="text-muted mb-3">
-                            Accredited continuing education program
-                        </p>
+                            <p class="mb-1"><strong>ITnetwork Academy Slovakia s.r.o.</strong></p>
+                            <p class="text-muted mb-3">
+                                Accredited continuing education program
+                            </p>
 
-                        <ul class="text-start d-inline-block">
-                            <li>Certificate ID: S-05186</li>
-                            <li>Accreditation number: 3904/2024/87/1</li>
-                            <li>Duration: 233 hours</li>
-                            <li>Period: 07/2025 – 11/2025</li>
-                        </ul>
+                            <ul class="text-start d-inline-block">
+                                <li>Certificate ID: S-05186</li>
+                                <li>Accreditation number: 3904/2024/87/1</li>
+                                <li>Duration: 233 hours</li>
+                                <li>Period: 07/2025 – 11/2025</li>
+                            </ul>
 
-                        <p class="text-muted mt-3 mb-2">Main areas of study:</p>
+                            <p class="text-muted mt-3 mb-2">Main areas of study:</p>
 
-                        <ul class="text-start d-inline-block">
-                            <li>Java SE, OOP, collections, streams, files</li>
-                            <li>Spring Boot, Hibernate, databases</li>
-                            <li>MySQL in Java, REST basics</li>
-                            <li>JavaScript, React (basics)</li>
-                            <li>Bootstrap, modern web design</li>
-                            <li>Git, UML, testing</li>
-                        </ul>
+                            <ul class="text-start d-inline-block">
+                                <li>Java SE, OOP, collections, streams, files</li>
+                                <li>Spring Boot, Hibernate, databases</li>
+                                <li>MySQL in Java, REST basics</li>
+                                <li>JavaScript, React (basics)</li>
+                                <li>Bootstrap, modern web design</li>
+                                <li>Git, UML, testing</li>
+                            </ul>
 
-                        <div class="mt-3">
-                            <a href="../assets/docs/Certifikat_ITnetwork_Java.pdf"
-                               target="_blank"
-                               class="btn btn-outline-primary" rel="noopener">
-                                Download certificate (PDF)
-                            </a>
+                            <div class="mt-3">
+                                <a href="../assets/docs/Certifikat_ITnetwork_Java.pdf"
+                                   target="_blank"
+                                   class="btn btn-outline-primary" rel="noopener">
+                                    Download certificate (PDF)
+                                </a>
+                            </div>
+
                         </div>
+                    </div>
 
+                </div>
+            </div>
+
+            <!-- OTHER CERTIFICATES – 2 COLUMNS (7 + 7) -->
+            <div class="row g-4">
+
+                <!-- JAVA & BACKEND -->
+                <div class="col-md-6">
+                    <div class="card shadow-sm h-100"
+                         style="border: 1px solid #f89820; border-left: 4px solid #f89820;">
+                        <div class="card-body text-center">
+                            <h2 class="h5 mb-4">Java &amp; Backend</h2>
+
+                            <div class="d-grid gap-2">
+                                <a class="btn btn-outline-primary" target="_blank"
+                                   href="../assets/docs/certificates/Certifikat_Zakladne_konstrukcie_jazyka_Java.pdf"
+                                   rel="noopener">
+                                    Java Language Fundamentals
+                                </a>
+                                <a class="btn btn-outline-primary" target="_blank"
+                                   href="../assets/docs/certificates/Certifikat_Objektovo_orientovane_programovanie_v_Jave.pdf"
+                                   rel="noopener">
+                                    Object-Oriented Programming in Java
+                                </a>
+                                <a class="btn btn-outline-primary" target="_blank"
+                                   href="../assets/docs/certificates/Certifikat_Kolekcie_a_prudy_v_Jave.pdf"
+                                   rel="noopener">
+                                    Collections and Streams in Java
+                                </a>
+                                <a class="btn btn-outline-primary" target="_blank"
+                                   href="../assets/docs/certificates/Certifikat_Praca_so_subormi_v_Jave.pdf"
+                                   rel="noopener">
+                                    File Handling in Java
+                                </a>
+                                <a class="btn btn-outline-primary" target="_blank"
+                                   href="../assets/docs/certificates/Certifikat_Testovanie_v_Jave.pdf" rel="noopener">
+                                    Testing in Java
+                                </a>
+                                <a class="btn btn-outline-primary" target="_blank"
+                                   href="../assets/docs/certificates/Certifikat_UML.pdf" rel="noopener">
+                                    UML
+                                </a>
+                                <a class="btn btn-outline-primary" target="_blank"
+                                   href="../assets/docs/certificates/Certifikat_Databaza_a_Hibernate_v_Spring_Boot_-_Blog.pdf"
+                                   rel="noopener">
+                                    Databases and Hibernate in Spring Boot
+                                </a>
+                            </div>
+
+                        </div>
+                    </div>
+                </div>
+
+                <!-- WEB & TOOLS -->
+                <div class="col-md-6">
+                    <div class="card shadow-sm h-100"
+                         style="border: 1px solid #61DAFB; border-left: 4px solid #61DAFB;">
+                        <div class="card-body text-center">
+                            <h2 class="h5 mb-4">Web &amp; Tools</h2>
+
+                            <div class="d-grid gap-2">
+                                <a class="btn btn-outline-primary" target="_blank"
+                                   href="../assets/docs/certificates/Certifikat_Zaklady_Spring_Boot_frameworku_pre_Javu.pdf"
+                                   rel="noopener">
+                                    Spring Boot – Basics
+                                </a>
+                                <a class="btn btn-outline-primary" target="_blank"
+                                   href="../assets/docs/certificates/Certifikat_Best_practices_pre_navrh_softwaru.pdf"
+                                   rel="noopener">
+                                    Best Practices in Software Design
+                                </a>
+                                <a class="btn btn-outline-primary" target="_blank"
+                                   href="../assets/docs/certificates/Certifikat_MySQL_databazy_krok_za_krokom.pdf"
+                                   rel="noopener">
+                                    MySQL Databases – Step by Step
+                                </a>
+                                <a class="btn btn-outline-primary" target="_blank"
+                                   href="../assets/docs/certificates/Certifikat_Webove_stranky_krok_za_krokom.pdf"
+                                   rel="noopener">
+                                    Web Pages – Step by Step
+                                </a>
+                                <a class="btn btn-outline-primary" target="_blank"
+                                   href="../assets/docs/certificates/Certifikat_Kompletny_kurz_CSS_frameworku_Bootstrap.pdf"
+                                   rel="noopener">
+                                    Bootstrap – Complete Course
+                                </a>
+                                <a class="btn btn-outline-primary" target="_blank"
+                                   href="../assets/docs/certificates/Certifikat_Zaklady_React.pdf" rel="noopener">
+                                    React – Basics
+                                </a>
+                                <a class="btn btn-outline-primary" target="_blank"
+                                   href="../assets/docs/certificates/Certifikat_Git.pdf" rel="noopener">
+                                    Git
+                                </a>
+                            </div>
+
+                        </div>
                     </div>
                 </div>
 
             </div>
-        </div>
-
-        <!-- OTHER CERTIFICATES – 2 COLUMNS (7 + 7) -->
-        <div class="row g-4">
-
-            <!-- JAVA & BACKEND -->
-            <div class="col-md-6">
-                <div class="card shadow-sm h-100" style="border: 1px solid #f89820; border-left: 4px solid #f89820;">
-                    <div class="card-body text-center">
-                        <h2 class="h5 mb-4">Java &amp; Backend</h2>
-
-                        <div class="d-grid gap-2">
-                            <a class="btn btn-outline-primary" target="_blank"
-                               href="../assets/docs/certificates/Certifikat_Zakladne_konstrukcie_jazyka_Java.pdf" rel="noopener">
-                                Java Language Fundamentals
-                            </a>
-                            <a class="btn btn-outline-primary" target="_blank"
-                               href="../assets/docs/certificates/Certifikat_Objektovo_orientovane_programovanie_v_Jave.pdf" rel="noopener">
-                                Object-Oriented Programming in Java
-                            </a>
-                            <a class="btn btn-outline-primary" target="_blank"
-                               href="../assets/docs/certificates/Certifikat_Kolekcie_a_prudy_v_Jave.pdf" rel="noopener">
-                                Collections and Streams in Java
-                            </a>
-                            <a class="btn btn-outline-primary" target="_blank"
-                               href="../assets/docs/certificates/Certifikat_Praca_so_subormi_v_Jave.pdf" rel="noopener">
-                                File Handling in Java
-                            </a>
-                            <a class="btn btn-outline-primary" target="_blank"
-                               href="../assets/docs/certificates/Certifikat_Testovanie_v_Jave.pdf" rel="noopener">
-                                Testing in Java
-                            </a>
-                            <a class="btn btn-outline-primary" target="_blank"
-                               href="../assets/docs/certificates/Certifikat_UML.pdf" rel="noopener">
-                                UML
-                            </a>
-                            <a class="btn btn-outline-primary" target="_blank"
-                               href="../assets/docs/certificates/Certifikat_Databaza_a_Hibernate_v_Spring_Boot_-_Blog.pdf" rel="noopener">
-                                Databases and Hibernate in Spring Boot
-                            </a>
-                        </div>
-
-                    </div>
-                </div>
+            <div class="text-center mt-4">
+                <a href="education.html" class="btn btn-primary">
+                    View education
+                </a>
             </div>
-
-            <!-- WEB & TOOLS -->
-            <div class="col-md-6">
-                <div class="card shadow-sm h-100" style="border: 1px solid #61DAFB; border-left: 4px solid #61DAFB;">
-                    <div class="card-body text-center">
-                        <h2 class="h5 mb-4">Web &amp; Tools</h2>
-
-                        <div class="d-grid gap-2">
-                            <a class="btn btn-outline-primary" target="_blank"
-                               href="../assets/docs/certificates/Certifikat_Zaklady_Spring_Boot_frameworku_pre_Javu.pdf" rel="noopener">
-                                Spring Boot – Basics
-                            </a>
-                            <a class="btn btn-outline-primary" target="_blank"
-                               href="../assets/docs/certificates/Certifikat_Best_practices_pre_navrh_softwaru.pdf" rel="noopener">
-                                Best Practices in Software Design
-                            </a>
-                            <a class="btn btn-outline-primary" target="_blank"
-                               href="../assets/docs/certificates/Certifikat_MySQL_databazy_krok_za_krokom.pdf" rel="noopener">
-                                MySQL Databases – Step by Step
-                            </a>
-                            <a class="btn btn-outline-primary" target="_blank"
-                               href="../assets/docs/certificates/Certifikat_Webove_stranky_krok_za_krokom.pdf" rel="noopener">
-                                Web Pages – Step by Step
-                            </a>
-                            <a class="btn btn-outline-primary" target="_blank"
-                               href="../assets/docs/certificates/Certifikat_Kompletny_kurz_CSS_frameworku_Bootstrap.pdf" rel="noopener">
-                                Bootstrap – Complete Course
-                            </a>
-                            <a class="btn btn-outline-primary" target="_blank"
-                               href="../assets/docs/certificates/Certifikat_Zaklady_React.pdf" rel="noopener">
-                                React – Basics
-                            </a>
-                            <a class="btn btn-outline-primary" target="_blank"
-                               href="../assets/docs/certificates/Certifikat_Git.pdf" rel="noopener">
-                                Git
-                            </a>
-                        </div>
-
-                    </div>
-                </div>
-            </div>
-
-        </div>
-        <div class="text-center mt-4">
-            <a href="education.html" class="btn btn-primary">
-                View education
-            </a>
-        </div>
-    </section>
+        </section>
 
     </main>
     <footer class="text-center text-muted py-4 border-top">
         <div class="mb-2">
             <a href="mailto:matohtk@gmail.com" class="text-secondary me-3" aria-label="E-mail">
-                <svg class="bi" aria-hidden="true" focusable="false"><use href="#bi-envelope-fill"/></svg>
+                <svg class="bi" aria-hidden="true" focusable="false">
+                    <use href="#bi-envelope-fill"/>
+                </svg>
             </a>
             <a href="https://www.linkedin.com/in/martin-hu%C5%A5ka-8b8707249/" target="_blank" rel="noopener"
                class="text-secondary me-3" aria-label="LinkedIn">
-                <svg class="bi" aria-hidden="true" focusable="false"><use href="#bi-linkedin"/></svg>
+                <svg class="bi" aria-hidden="true" focusable="false">
+                    <use href="#bi-linkedin"/>
+                </svg>
             </a>
             <a href="https://github.com/M4H44" target="_blank" rel="noopener" class="text-secondary"
                aria-label="GitHub">
-                <svg class="bi" aria-hidden="true" focusable="false"><use href="#bi-github"/></svg>
+                <svg class="bi" aria-hidden="true" focusable="false">
+                    <use href="#bi-github"/>
+                </svg>
             </a>
         </div>
         © 2026 Martin Huťka
@@ -235,7 +259,10 @@
         // zapamätanie zvoleného jazyka
         document.querySelectorAll('a[data-lang]').forEach(function (a) {
             a.addEventListener('click', function () {
-                try { localStorage.setItem('lang', a.dataset.lang); } catch (e) {}
+                try {
+                    localStorage.setItem('lang', a.dataset.lang);
+                } catch (e) {
+                }
             });
         });
     </script>

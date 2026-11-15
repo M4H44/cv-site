@@ -37,12 +37,26 @@
 <body>
     <!-- Ikony vložené priamo do stránky (Bootstrap Icons) namiesto ikonového fontu z CDN -->
     <svg xmlns="http://www.w3.org/2000/svg" class="d-none" aria-hidden="true">
-        <symbol id="bi-person-fill" viewBox="0 0 16 16"><path d="M3 14s-1 0-1-1 1-4 6-4 6 3 6 4-1 1-1 1zm5-6a3 3 0 1 0 0-6 3 3 0 0 0 0 6"/></symbol>
-        <symbol id="bi-envelope-fill" viewBox="0 0 16 16"><path d="M0 3.6A2 2 0 0 1 2 2h12a2 2 0 0 1 2 1.6L8 8.4zm0 1.1v7.1l5.8-3.6zm6.8 4.1-6.6 4A2 2 0 0 0 2 14h12a2 2 0 0 0 1.8-1.1l-6.6-4-1.2.7zm3.4-.6 5.8 3.6V4.7z"/></symbol>
-        <symbol id="bi-github" viewBox="0 0 16 16"><path d="M8 0a8 8 0 0 0-2.5 15.6q.6 0 .5-.4v-1.5c-2 .4-2.5-.5-2.7-1 0-.1-.5-.9-.8-1-.3-.2-.7-.6 0-.6s1 .6 1.2.8c.7 1.2 1.9 1 2.4.7q0-.8.5-1c-1.8-.3-3.7-1-3.7-4q0-1.3.8-2.2c0-.2-.3-1 .1-2 0 0 .7-.3 2.2.7a7 7 0 0 1 4 0c1.5-1 2.2-.8 2.2-.8.5 1.1.2 2 .1 2.1q.8.9.8 2.2c0 3-1.9 3.7-3.6 4q.5.3.5 1.4v2.2q0 .4.5.4A8 8 0 0 0 16 8a8 8 0 0 0-8-8"/></symbol>
-        <symbol id="bi-linkedin" viewBox="0 0 16 16"><path d="M0 1.1Q0 .1 1.2 0h13.6Q16 .1 16 1.1V15q0 1-1.2 1.1H1.2Q0 15.9 0 14.9zm5 12.3V6.2H2.4v7.2zM3.6 5.2Q5.1 5 5.1 3.9T3.8 2.7c-1.3-.1-1.4.5-1.4 1.2q0 1.2 1.3 1.3zm5 8.2V8.8q.3-.9 1.3-1 1.2.2 1.2 1.7v3.9h2.4V9.3q-.2-3.4-2.8-3.3C9.5 6 9 6.7 8.7 7.2v-1H6.3v7.2z"/></symbol>
-        <symbol id="bi-geo-alt-fill" viewBox="0 0 16 16"><path d="M8 16s6-5.7 6-10A6 6 0 0 0 2 6c0 4.3 6 10 6 10m0-7a3 3 0 1 1 0-6 3 3 0 0 1 0 6"/></symbol>
-        <symbol id="bi-file-earmark-pdf-fill" viewBox="0 0 16 16"><path d="m5.5 12.4.5-.2-.5.6-.6.6q-.1-.3 0-.4 0-.3.6-.6M8 10.8h-.4l.5-1 .5.9zm2.5 1-.4-.4h.6l.5.3v.2l-.1.2H11q-.1 0-.5-.3M8.3 7l-.2.8-.1-.3v-.9l.1-.3h.2V7"/><path fill-rule="evenodd" d="M4 0h5.3l.7.3L13.7 4l.3.7V14a2 2 0 0 1-2 2H4a2 2 0 0 1-2-2V2a2 2 0 0 1 2-2m5.5 1.5v2a1 1 0 0 0 1 1h2zM4.2 13.7l.4.4h.6l1-.8 1-1.5 2-.4.8 1q.4.2 1 .3l.5-.1.3-.4.2-.6-.2-.5q-.4-.4-1-.5H9.5l-1-1.7.6-2.4-.2-.6-.4-.3h-.6a1 1 0 0 0-.7.9v1.1L7.8 9l-1 2.2-1.6.7-.9.8a1 1 0 0 0 0 1"/></symbol>
+        <symbol id="bi-person-fill" viewBox="0 0 16 16">
+            <path d="M3 14s-1 0-1-1 1-4 6-4 6 3 6 4-1 1-1 1zm5-6a3 3 0 1 0 0-6 3 3 0 0 0 0 6"/>
+        </symbol>
+        <symbol id="bi-envelope-fill" viewBox="0 0 16 16">
+            <path d="M0 3.6A2 2 0 0 1 2 2h12a2 2 0 0 1 2 1.6L8 8.4zm0 1.1v7.1l5.8-3.6zm6.8 4.1-6.6 4A2 2 0 0 0 2 14h12a2 2 0 0 0 1.8-1.1l-6.6-4-1.2.7zm3.4-.6 5.8 3.6V4.7z"/>
+        </symbol>
+        <symbol id="bi-github" viewBox="0 0 16 16">
+            <path d="M8 0a8 8 0 0 0-2.5 15.6q.6 0 .5-.4v-1.5c-2 .4-2.5-.5-2.7-1 0-.1-.5-.9-.8-1-.3-.2-.7-.6 0-.6s1 .6 1.2.8c.7 1.2 1.9 1 2.4.7q0-.8.5-1c-1.8-.3-3.7-1-3.7-4q0-1.3.8-2.2c0-.2-.3-1 .1-2 0 0 .7-.3 2.2.7a7 7 0 0 1 4 0c1.5-1 2.2-.8 2.2-.8.5 1.1.2 2 .1 2.1q.8.9.8 2.2c0 3-1.9 3.7-3.6 4q.5.3.5 1.4v2.2q0 .4.5.4A8 8 0 0 0 16 8a8 8 0 0 0-8-8"/>
+        </symbol>
+        <symbol id="bi-linkedin" viewBox="0 0 16 16">
+            <path d="M0 1.1Q0 .1 1.2 0h13.6Q16 .1 16 1.1V15q0 1-1.2 1.1H1.2Q0 15.9 0 14.9zm5 12.3V6.2H2.4v7.2zM3.6 5.2Q5.1 5 5.1 3.9T3.8 2.7c-1.3-.1-1.4.5-1.4 1.2q0 1.2 1.3 1.3zm5 8.2V8.8q.3-.9 1.3-1 1.2.2 1.2 1.7v3.9h2.4V9.3q-.2-3.4-2.8-3.3C9.5 6 9 6.7 8.7 7.2v-1H6.3v7.2z"/>
+        </symbol>
+        <symbol id="bi-geo-alt-fill" viewBox="0 0 16 16">
+            <path d="M8 16s6-5.7 6-10A6 6 0 0 0 2 6c0 4.3 6 10 6 10m0-7a3 3 0 1 1 0-6 3 3 0 0 1 0 6"/>
+        </symbol>
+        <symbol id="bi-file-earmark-pdf-fill" viewBox="0 0 16 16">
+            <path d="m5.5 12.4.5-.2-.5.6-.6.6q-.1-.3 0-.4 0-.3.6-.6M8 10.8h-.4l.5-1 .5.9zm2.5 1-.4-.4h.6l.5.3v.2l-.1.2H11q-.1 0-.5-.3M8.3 7l-.2.8-.1-.3v-.9l.1-.3h.2V7"/>
+            <path fill-rule="evenodd"
+                  d="M4 0h5.3l.7.3L13.7 4l.3.7V14a2 2 0 0 1-2 2H4a2 2 0 0 1-2-2V2a2 2 0 0 1 2-2m5.5 1.5v2a1 1 0 0 0 1 1h2zM4.2 13.7l.4.4h.6l1-.8 1-1.5 2-.4.8 1q.4.2 1 .3l.5-.1.3-.4.2-.6-.2-.5q-.4-.4-1-.5H9.5l-1-1.7.6-2.4-.2-.6-.4-.3h-.6a1 1 0 0 0-.7.9v1.1L7.8 9l-1 2.2-1.6.7-.9.8a1 1 0 0 0 0 1"/>
+        </symbol>
     </svg>
 
     <nav class="navbar navbar-expand-lg navbar-dark bg-primary">
@@ -67,89 +81,108 @@
     </nav>
     <main>
 
-    <header class="bg-light py-5">
-        <div class="container text-center">
-            <h1 class="display-6">Contact</h1>
-            <p class="text-muted">Get in touch</p>
-        </div>
-    </header>
+        <header class="bg-light py-5">
+            <div class="container text-center">
+                <h1 class="display-6">Contact</h1>
+                <p class="text-muted">Get in touch</p>
+            </div>
+        </header>
 
-    <section class="container my-5">
-        <div class="row justify-content-center">
-            <div class="col-md-6">
-                <div class="card shadow-sm" style="border: 1px solid #0d6efd; border-left: 4px solid #0d6efd;">
-                    <div class="card-body">
+        <section class="container my-5">
+            <div class="row justify-content-center">
+                <div class="col-md-6">
+                    <div class="card shadow-sm" style="border: 1px solid #0d6efd; border-left: 4px solid #0d6efd;">
+                        <div class="card-body">
 
-                        <p>
-                            <svg class="bi me-2 text-primary" aria-hidden="true" focusable="false"><use href="#bi-person-fill"/></svg>
-                            <strong>Name:</strong> Martin Huťka
-                        </p>
+                            <p>
+                                <svg class="bi me-2 text-primary" aria-hidden="true" focusable="false">
+                                    <use href="#bi-person-fill"/>
+                                </svg>
+                                <strong>Name:</strong> Martin Huťka
+                            </p>
 
-                        <p>
-                            <svg class="bi me-2 text-primary" aria-hidden="true" focusable="false"><use href="#bi-envelope-fill"/></svg>
-                            <strong>Email:</strong>
-                            <a href="mailto:matohtk@gmail.com">matohtk@gmail.com</a>
-                        </p>
+                            <p>
+                                <svg class="bi me-2 text-primary" aria-hidden="true" focusable="false">
+                                    <use href="#bi-envelope-fill"/>
+                                </svg>
+                                <strong>Email:</strong>
+                                <a href="mailto:matohtk@gmail.com">matohtk@gmail.com</a>
+                            </p>
 
 
-                        <p>
-                            <svg class="bi me-2" aria-hidden="true" focusable="false"><use href="#bi-github"/></svg>
-                            <strong>GitHub:</strong>
-                            <a href="https://github.com/M4H44" target="_blank" rel="noopener">
-                                github.com/M4H44
-                            </a>
-                        </p>
+                            <p>
+                                <svg class="bi me-2" aria-hidden="true" focusable="false">
+                                    <use href="#bi-github"/>
+                                </svg>
+                                <strong>GitHub:</strong>
+                                <a href="https://github.com/M4H44" target="_blank" rel="noopener">
+                                    github.com/M4H44
+                                </a>
+                            </p>
 
-                        <p>
-                            <svg class="bi me-2 text-primary" aria-hidden="true" focusable="false"><use href="#bi-linkedin"/></svg>
-                            <strong>LinkedIn:</strong>
-                            <a href="https://www.linkedin.com/in/martin-hu%C5%A5ka-8b8707249/" target="_blank" rel="noopener">
-                                linkedin.com/in/martin-hutka
-                            </a>
-                        </p>
+                            <p>
+                                <svg class="bi me-2 text-primary" aria-hidden="true" focusable="false">
+                                    <use href="#bi-linkedin"/>
+                                </svg>
+                                <strong>LinkedIn:</strong>
+                                <a href="https://www.linkedin.com/in/martin-hu%C5%A5ka-8b8707249/" target="_blank"
+                                   rel="noopener">
+                                    linkedin.com/in/martin-hutka
+                                </a>
+                            </p>
 
-                        <p>
-                            <svg class="bi me-2 text-secondary" aria-hidden="true" focusable="false"><use href="#bi-geo-alt-fill"/></svg>
-                            <strong>Location:</strong>
-                            <a href="https://www.google.com/maps/place/Martin,+Slovakia"
-                               target="_blank"
-                               rel="noopener noreferrer">
-                                Martin, Slovakia
-                            </a>
-                        </p>
+                            <p>
+                                <svg class="bi me-2 text-secondary" aria-hidden="true" focusable="false">
+                                    <use href="#bi-geo-alt-fill"/>
+                                </svg>
+                                <strong>Location:</strong>
+                                <a href="https://www.google.com/maps/place/Martin,+Slovakia"
+                                   target="_blank"
+                                   rel="noopener noreferrer">
+                                    Martin, Slovakia
+                                </a>
+                            </p>
 
-                        <div class="mt-4">
-                            <a href="../assets/docs/CV_Martin_Hutka_EN_WEB_V2.pdf" target="_blank"
-                               class="btn btn-primary" rel="noopener">
-                                <svg class="bi me-2" aria-hidden="true" focusable="false"><use href="#bi-file-earmark-pdf-fill"/></svg>
-                                Download CV (PDF)
-                            </a>
+                            <div class="mt-4">
+                                <a href="../assets/docs/CV_Martin_Hutka_EN_WEB_V2.pdf" target="_blank"
+                                   class="btn btn-primary" rel="noopener">
+                                    <svg class="bi me-2" aria-hidden="true" focusable="false">
+                                        <use href="#bi-file-earmark-pdf-fill"/>
+                                    </svg>
+                                    Download CV (PDF)
+                                </a>
+                            </div>
+
                         </div>
-
                     </div>
                 </div>
             </div>
-        </div>
-        <div class="text-center mt-4">
-            <a href="index.html" class="btn btn-primary">
-                Back to profile
-            </a>
-        </div>
-    </section>
+            <div class="text-center mt-4">
+                <a href="index.html" class="btn btn-primary">
+                    Back to profile
+                </a>
+            </div>
+        </section>
 
     </main>
     <footer class="text-center text-muted py-4 border-top">
         <div class="mb-2">
             <a href="mailto:matohtk@gmail.com" class="text-secondary me-3" aria-label="E-mail">
-                <svg class="bi" aria-hidden="true" focusable="false"><use href="#bi-envelope-fill"/></svg>
+                <svg class="bi" aria-hidden="true" focusable="false">
+                    <use href="#bi-envelope-fill"/>
+                </svg>
             </a>
             <a href="https://www.linkedin.com/in/martin-hu%C5%A5ka-8b8707249/" target="_blank" rel="noopener"
                class="text-secondary me-3" aria-label="LinkedIn">
-                <svg class="bi" aria-hidden="true" focusable="false"><use href="#bi-linkedin"/></svg>
+                <svg class="bi" aria-hidden="true" focusable="false">
+                    <use href="#bi-linkedin"/>
+                </svg>
             </a>
             <a href="https://github.com/M4H44" target="_blank" rel="noopener" class="text-secondary"
                aria-label="GitHub">
-                <svg class="bi" aria-hidden="true" focusable="false"><use href="#bi-github"/></svg>
+                <svg class="bi" aria-hidden="true" focusable="false">
+                    <use href="#bi-github"/>
+                </svg>
             </a>
         </div>
         © 2026 Martin Huťka
@@ -160,7 +193,10 @@
         // zapamätanie zvoleného jazyka
         document.querySelectorAll('a[data-lang]').forEach(function (a) {
             a.addEventListener('click', function () {
-                try { localStorage.setItem('lang', a.dataset.lang); } catch (e) {}
+                try {
+                    localStorage.setItem('lang', a.dataset.lang);
+                } catch (e) {
+                }
             });
         });
     </script>
