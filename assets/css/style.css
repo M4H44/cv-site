@@ -122,3 +122,12 @@ header.bg-light {
     background-size: 50%;
     border-radius: 50%;
 }
+
+/* Bootstrap ikony vložené ako SVG: veľkosť písmena, farba podľa textu okolo */
+.bi {
+    width: 1em;
+    height: 1em;
+    fill: currentColor;
+    flex-shrink: 0;
+    vertical-align: -.125em;
+}

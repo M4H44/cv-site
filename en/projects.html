@@ -23,15 +23,17 @@
     <meta property="og:locale" content="en_US">
     <meta name="twitter:card" content="summary_large_image">
     <link rel="icon" href="../favicon.ico" type="image/x-icon">
+    <!-- Skoršie nadviazanie spojenia s CDN, aby sa štýl stiahol rýchlejšie -->
+    <link rel="preconnect" href="https://cdn.jsdelivr.net">
+    <link rel="preconnect" href="https://cdn.jsdelivr.net" crossorigin>
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet">
-    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.css">
     <link rel="stylesheet" href="../assets/css/style.css">
     <!-- Umami analytics -->
     <script defer src="https://cloud.umami.is/script.js"
             data-website-id="a7a9dc1a-0ee0-482f-becc-7dc8a5ba9d4b"></script>
 </head>
 <body>
-    <!-- Tech icons (Devicon, MIT) as an inline SVG sprite – replaces the devicon.min.css font -->
+    <!-- Ikony vložené priamo do stránky (Devicon + Bootstrap Icons) namiesto ikonových fontov z CDN -->
     <svg xmlns="http://www.w3.org/2000/svg" class="d-none" aria-hidden="true">
         <symbol id="ti-java" viewBox="0 0 128 128"><g fill="#EA2D2E"><path d="M47.6 98.1c-19.2 5.4 11.7 16.5 36.1 6-4-1.6-6.8-3.4-6.8-3.4-11 2.1-16 2.3-25.9 1.1-8.1-.9-3.4-3.7-3.4-3.7m33.2-10.4a101 101 0 0 1-33.3 1.6c-8.2-.9-2.9-4.8-2.9-4.8-21.1 7 11.8 15 41.3 6.3-3.1-1.1-5-3.1-5-3.1M92.1 27S49.4 37.8 69.8 61.3c6 7-1.6 13.1-1.6 13.1s15.3-7.8 8.3-17.7C69.9 47.4 64.9 42.9 92 27m10 81.1s3.6 3-3.9 5.2c-14 4.3-58.7 5.5-71 .2-4.5-2 3.8-4.7 6.5-5.2s4.3-.5 4.3-.5c-5-3.5-32 6.8-13.8 9.8 49.8 8 90.8-3.6 78-9.5M85 78c2.4-1.6 5.7-3 5.7-3s-9.4 1.6-18.8 2.4c-11.5 1-23.8 1.2-30 .3-14.7-2 8-7.3 8-7.3s-8.8-.6-19.6 4.6C17.5 81.1 62 84 85 78M90.6 93l-.5.7c31.3-8.3 19.8-29 4.9-23.8-1.3.5-2 1.6-2 1.6s.8-.4 2.6-.7c7.6-1.6 18.4 10-5 22.2M64.2 70c-4.6-10.4-20.3-19.5 0-35.5 25.3-20 12.3-33 12.3-33 5.2 20.7-18.5 27-27 39.8C43.7 50 52.4 59.4 64.2 70m27.3 51.8a185 185 0 0 1-57 .9s3 2.4 17.7 3.3c22.5 1.5 57-.8 57.8-11.4 0 0-1.5 4-18.5 7.2"/></g></symbol>
         <symbol id="ti-spring" viewBox="0 0 128 128"><g fill="#5FB832"><path d="M116.5 6.6a59 59 0 0 1-6.9 12.2A64 64 0 0 0 64.2 0C29 0 0 29 0 64.2a64 64 0 0 0 20 46.6l2.3 2.1A64 64 0 0 0 63.7 128a64.5 64.5 0 0 0 64-59.7c1.7-16.3-3-37-11.2-61.7M29 111.2a6 6 0 0 1-4.3 2c-3 0-5.5-2.5-5.5-5.5s2.5-5.5 5.5-5.5q1.9 0 3.5 1.2a5.5 5.5 0 0 1 .8 7.8m87-19.3c-15.8 21.2-49.6 14-71.3 15 0 0-3.8.3-7.7 1l3.3-1.4c15.3-5.3 22.5-6.4 31.7-11.1 17.4-8.9 34.7-28.3 38.2-48.5-6.6 19.5-26.7 36.1-45 43-12.6 4.6-35.3 9-35.3 9l-.9-.4c-15.4-7.5-15.9-41 12.2-51.8 12.3-4.7 24-2.1 37.3-5.3a58 58 0 0 0 37.2-27.9c7.5 22.2 16.5 57 .4 78.4"/></g></symbol>
@@ -44,6 +46,21 @@
         <symbol id="ti-tailwindcss" viewBox="0 0 128 128"><g fill="#38bdf8"><path d="M64 25.6q-25.5 0-32 25.6 9.6-12.7 22.4-9.6c4.9 1.2 8.4 4.7 12.2 8.7C73 56.6 80.1 64 96 64q25.5 0 32-25.6-9.6 12.8-22.4 9.6c-4.9-1.2-8.3-4.7-12.2-8.7C87.1 33 79.9 25.6 64 25.6M32 64Q6.5 64 0 89.6 9.6 76.9 22.4 80c4.9 1.2 8.4 4.7 12.2 8.7C41 95 48.1 102.4 64 102.4q25.5 0 32-25.6-9.6 12.8-22.4 9.6c-4.9-1.2-8.3-4.7-12.2-8.7C55.1 71.4 47.9 64 32 64m0 0"/></g></symbol>
         <symbol id="ti-mysql" viewBox="0 0 128 128"><g fill="#00618a"><path d="M117.7 98.2a40 40 0 0 0-16.9 2.4c-1.3.6-3.3.6-3.5 2.2.7.7.8 1.9 1.4 2.8 1 1.7 2.9 4 4.5 5.3q2.7 2.2 5.6 4c3.4 2 7.2 3.3 10.5 5.3q3 2 5.7 4.2c1 .7 1.6 1.8 2.8 2.2v-.2c-.6-.8-.8-2-1.4-2.8l-2.6-2.6a42 42 0 0 0-9-8.7c-2.8-2-8.9-4.6-10-7.7l-.2-.2c2-.2 4.2-1 6-1.4 3-.8 5.6-.6 8.7-1.4l4.1-1.2v-.8c-1.5-1.6-2.6-3.7-4.3-5.1q-6.8-5.9-14.3-10.7c-2.8-1.8-6.2-3-9.1-4.4-1-.5-2.7-.7-3.4-1.6-1.5-2-2.4-4.4-3.6-6.7q-3.7-7.4-7-15c-1.6-3.5-2.6-6.9-4.4-10a88 88 0 0 0-33.7-32.5c-3.2-1.9-7-2.6-11.1-3.6l-6.6-.4c-1.3-.5-2.7-2.1-4-3-5-3-17.7-10-21.4-1C-1.8 11.4 4 17 6.1 19.8c1.4 2 3.3 4.3 4.3 6.6.7 1.5.9 3 1.4 4.5 1.5 4 2.7 8.2 4.6 11.7q1.4 3 3.2 5.4c.7 1 2 1.4 2.2 3-1.3 1.7-1.3 4.3-2 6.5a38 38 0 0 0 2.5 29.1c1.4 2.3 4.7 7 9.2 5.2 3.9-1.6 3-6.5 4.1-10.9.3-1 .1-1.7.6-2.4v.2l3.6 7.2C42.4 90 47 94.5 51 97.5c2 1.5 3.7 4.2 6.3 5.1v-.2h-.2c-.5-.8-1.3-1.1-2-1.8a46 46 0 0 1-4.5-5.1Q45.3 88 41 79.6q-2-4.2-3.8-8.3c-.4-1-.4-2.6-1.4-3.2-1.3 2-3.1 3.6-4.1 6-1.6 3.7-1.8 8.3-2.4 13l-.4.2c-2.8-.6-3.7-3.5-4.8-6-2.6-6-3-16-.8-23.1.6-1.8 3.3-7.6 2.2-9.3-.5-1.7-2.2-2.7-3.2-4a31 31 0 0 1-3.1-5.5c-2.2-4.8-3.1-10.2-5.4-15-1-2.4-2.9-4.8-4.3-6.8-1.7-2.3-3.5-4-4.8-6.8-.4-1-1-2.5-.4-3.5q.2-1 1.2-1.2c1.1-1 4.3.3 5.5.8q4.7 1.8 8.6 4.3c1.3.9 2.6 2.5 4.1 3h1.8c2.8.6 6 .2 8.5 1q7 2.3 12.5 6a77 77 0 0 1 27.2 29.7c1 2 1.5 3.8 2.4 6Q79 63.1 82 69.4c1.8 4.1 3.6 8.3 6.2 11.7C89.5 83 94.7 84 97 85c1.6.7 4.3 1.4 6 2.3q4.5 3 8.6 6c1.4 1 5.8 3.2 6 5M29 22.7a14 14 0 0 0-3.6.4v.2h.2c.7 1.4 2 2.4 2.8 3.6l2 4.1.2-.1q1.8-1.4 1.7-4.4-.4-.8-1-1.8c-.5-.8-1.6-1.3-2.3-2m0 0"/></g></symbol>
         <symbol id="ti-githubactions" viewBox="0 0 128 128"><g fill="#2088FF"><path d="M26.7 0a26.7 26.7 0 0 0-5.4 52.8v37.9c0 11.7 9.7 21.3 21.4 21.3h.2c1.3 9 9 16 18.4 16a18.7 18.7 0 0 0 0-37.3c-9.3 0-17.1 7-18.4 16h-.2a16 16 0 0 1-16-16v-27a19 19 0 0 0 13.2 5.6h3c1.3 9 9 16 18.4 16s17.2-7 18.5-16h11c1.4 9 9.2 16 18.5 16a18.7 18.7 0 0 0 0-37.3C100 48 92.2 55 91 64h-11a18.7 18.7 0 0 0-37 0h-3c-6.4 0-11.8-4.6-13-10.7A26.7 26.7 0 0 0 26.7 0m0 5.3A21.3 21.3 0 0 1 48 26.7 21.3 21.3 0 0 1 26.7 48 21.3 21.3 0 0 1 5.3 26.7 21.3 21.3 0 0 1 26.7 5.3M21.5 13c-2.8 0-5.5 2.2-5.5 5.3v17c0 4 4.7 6.7 8.1 4.5l13.7-8.4c3.2-2 3.3-7 0-9l-13.6-8.6a5 5 0 0 0-2.7-.8m-.2 5.3L35 26.8l-13.7 8.4zm40 35.1a13.3 13.3 0 0 1 13.4 13.4A13.3 13.3 0 0 1 61.3 80 13.3 13.3 0 0 1 48 66.7a13.3 13.3 0 0 1 13.3-13.4m48 0a13.3 13.3 0 0 1 13.4 13.4A13.3 13.3 0 0 1 109.3 80 13.3 13.3 0 0 1 96 66.7a13.3 13.3 0 0 1 13.3-13.4m-42.5 7a3 3 0 0 0-2 .8l-6.2 6.3-2.1-2.1a2.7 2.7 0 0 0-3.8 0 2.7 2.7 0 0 0 0 3.8l4 4a2.7 2.7 0 0 0 3.8 0l8.1-8.3a3 3 0 0 0 0-3.7 3 3 0 0 0-1.8-.8m48 0a3 3 0 0 0-2 .8l-6.2 6.3-2.1-2.1a2.7 2.7 0 0 0-3.8 0 2.7 2.7 0 0 0 0 3.8l4 4a2.7 2.7 0 0 0 3.8 0l8.1-8.3a3 3 0 0 0 0-3.7 3 3 0 0 0-1.8-.8m-5.5 30.4c-9.3 0-17.2 7-18.4 16h-3a2.7 2.7 0 0 0-2.6 2.8 2.7 2.7 0 0 0 2.8 2.6h2.7a18.7 18.7 0 1 0 18.5-21.3m-48 5.3a13.3 13.3 0 0 1 13.4 13.3 13.3 13.3 0 0 1-13.4 13.4A13.3 13.3 0 0 1 48 109.3 13.3 13.3 0 0 1 61.3 96m48 0a13.3 13.3 0 0 1 13.4 13.3 13.3 13.3 0 0 1-13.4 13.4A13.3 13.3 0 0 1 96 109.3 13.3 13.3 0 0 1 109.3 96M56 105.3a4 4 0 0 0-4 4c0 2.2 1.8 4 4 4s4-1.8 4-4a4 4 0 0 0-4-4m10.7 0a4 4 0 0 0-4 4c0 2.2 1.8 4 4 4s4-1.8 4-4a4 4 0 0 0-4-4M56 108q1.2.1 1.3 1.3 0 1.3-1.3 1.4-1.2-.1-1.3-1.4.1-1.2 1.3-1.3m10.7 0q1.2.1 1.3 1.3-.1 1.3-1.3 1.4-1.3-.1-1.4-1.4.1-1.2 1.4-1.3"/></g></symbol>
+        <symbol id="bi-box" viewBox="0 0 16 16"><path d="M8.2 1.1h-.4l-6 2.4L8 6l6.2-2.5zM15 4.2 8.5 6.8v8l6.5-2.6zM7.5 14.8v-8L1 4.2v8zM7.5.2h1L15.8 3l.3.5v8.7a1 1 0 0 1-.6.9L8.2 16h-.4L.6 13a1 1 0 0 1-.6-.8V3.5L.3 3z"/></symbol>
+        <symbol id="bi-git" viewBox="0 0 16 16"><path d="m15.7 7.3-7-7a1 1 0 0 0-1.4 0L5.8 1.8l1.8 1.8a1.2 1.2 0 0 1 1.6 1.6L11 6.9a1.2 1.2 0 0 1 1.2 2 1.2 1.2 0 0 1-2-1.3L8.6 6v4.3a1.2 1.2 0 1 1-1 0V5.9a1.2 1.2 0 0 1-.7-1.6L5.1 2.5.3 7.3a1 1 0 0 0 0 1.4l7 7a1 1 0 0 0 1.4 0l7-7a1 1 0 0 0 0-1.4"/></symbol>
+        <symbol id="bi-github" viewBox="0 0 16 16"><path d="M8 0a8 8 0 0 0-2.5 15.6q.6 0 .5-.4v-1.5c-2 .4-2.5-.5-2.7-1 0-.1-.5-.9-.8-1-.3-.2-.7-.6 0-.6s1 .6 1.2.8c.7 1.2 1.9 1 2.4.7q0-.8.5-1c-1.8-.3-3.7-1-3.7-4q0-1.3.8-2.2c0-.2-.3-1 .1-2 0 0 .7-.3 2.2.7a7 7 0 0 1 4 0c1.5-1 2.2-.8 2.2-.8.5 1.1.2 2 .1 2.1q.8.9.8 2.2c0 3-1.9 3.7-3.6 4q.5.3.5 1.4v2.2q0 .4.5.4A8 8 0 0 0 16 8a8 8 0 0 0-8-8"/></symbol>
+        <symbol id="bi-images" viewBox="0 0 16 16"><path d="M4.5 9a1.5 1.5 0 1 0 0-3 1.5 1.5 0 0 0 0 3"/><path d="M14 13a2 2 0 0 1-2 2H2a2 2 0 0 1-2-2V5a2 2 0 0 1 2-2 2 2 0 0 1 2-2h10a2 2 0 0 1 2 2v8a2 2 0 0 1-2 2m0-11H4a1 1 0 0 0-1 1h9a2 2 0 0 1 2 2v7a1 1 0 0 0 1-1V3a1 1 0 0 0-1-1M2 4a1 1 0 0 0-1 1v8l2.6-2.4a1 1 0 0 1 .7 0l2.6 1.8 3.7-3.8h.6l1.8 1.9V5a1 1 0 0 0-1-1z"/></symbol>
+        <symbol id="bi-globe" viewBox="0 0 16 16"><path d="M0 8a8 8 0 1 1 16 0A8 8 0 0 1 0 8m7.5-7q-1 .4-1.9 2l-.5 1h2.4zM4.1 4l.6-1.5.6-1a7 7 0 0 0-3 2.5zm-.6 3.5q0-1.3.3-2.5H1.7A7 7 0 0 0 1 7.5zM4.8 5l-.3 2.5h3V5zm3.7 0v2.5h3L11.2 5zm-4 3.5.3 2.5h2.7V8.5zm4 0V11h2.7q.2-1.2.3-2.5zM5.1 12l.5 1q.9 1.6 1.9 2v-3zm.2 2.5-.6-1-.6-1.5H2.3a7 7 0 0 0 3 2.5M3.8 11l-.3-2.5H1q0 1.3.7 2.5zm6.9 3.5a7 7 0 0 0 3-2.5H12l-.6 1.5zM8.5 12v3q1-.4 1.9-2l.5-1zm3.7-1h2.1a7 7 0 0 0 .7-2.5h-2.5zM15 7.5a7 7 0 0 0-.7-2.5h-2.1q.3 1.2.3 2.5zm-3.7-5 .6 1.5h1.8a7 7 0 0 0-3-2.5zM10.9 4l-.5-1q-.9-1.6-1.9-2v3z"/></symbol>
+        <symbol id="bi-code-slash" viewBox="0 0 16 16"><path d="M10.5 1.6a.5.5 0 1 0-1-.2l-4 13a.5.5 0 0 0 1 .2zM4.9 4.1a.5.5 0 0 1 0 .8L1.7 8 5 11.1a.5.5 0 0 1-.8.8L.6 8.4a.5.5 0 0 1 0-.8l3.5-3.5a.5.5 0 0 1 .8 0m6.2 0a.5.5 0 0 0 0 .8L14.3 8 11 11.1a.5.5 0 0 0 .8.8l3.5-3.5a.5.5 0 0 0 0-.8l-3.5-3.5a.5.5 0 0 0-.8 0"/></symbol>
+        <symbol id="bi-palette" viewBox="0 0 16 16"><path d="M8 5a1.5 1.5 0 1 0 0-3 1.5 1.5 0 0 0 0 3m4 3a1.5 1.5 0 1 0 0-3 1.5 1.5 0 0 0 0 3M5.5 7a1.5 1.5 0 1 1-3 0 1.5 1.5 0 0 1 3 0m.5 6a1.5 1.5 0 1 0 0-3 1.5 1.5 0 0 0 0 3"/><path d="M16 8c0 3.2-1.9 2.6-3.6 2-1-.2-2-.5-2.4 0q-.7 1.1-.4 3c.2 1.5.4 3-1.6 3a8 8 0 1 1 8-8m-8 7q.8-.1.7-.2v-1.7l-.2-1.4q-.1-1.3.7-2.4.7-.5 1.3-.6l1.2.1 1 .3 1 .3h1s.3-.2.3-1.4a7 7 0 1 0-7 7"/></symbol>
+        <symbol id="bi-filetype-js" viewBox="0 0 16 16"><path fill-rule="evenodd" d="M14 4.5V14a2 2 0 0 1-2 2H8v-1h4a1 1 0 0 0 1-1V4.5h-2A1.5 1.5 0 0 1 9.5 3V1H4a1 1 0 0 0-1 1v9H2V2a2 2 0 0 1 2-2h5.5zM3.2 15.3l-.1-.5h.7l.3.4.2.1h.8l.2-.2.1-.3-.1-.3-.5-.2-.6-.1-.6-.2-.3-.4-.1-.5q0-.4.2-.7.1-.3.5-.4.3-.2.8-.2t.7.2l.5.4.2.6h-.7l-.1-.3-.3-.2h-.3l-.6.1-.1.4.1.3.4.2.6.1.6.2.4.4q.2.2.1.6l-.2.6-.5.4q-.4.2-.9.2H4l-.5-.3zm-3.1 0-.1-.5h.8v.3l.5.2q.3 0 .4-.2.2-.1.2-.4v-2.8h.7v2.8q0 .6-.3 1-.4.3-1 .3H.7l-.4-.4z"/></symbol>
+        <symbol id="bi-box-arrow-up-right" viewBox="0 0 16 16"><path fill-rule="evenodd" d="M8.6 3.5a1 1 0 0 0-.5-.5H1.5A1.5 1.5 0 0 0 0 4.5v10A1.5 1.5 0 0 0 1.5 16h10a1.5 1.5 0 0 0 1.5-1.5V7.9a.5.5 0 0 0-1 0v6.6a1 1 0 0 1-.5.5h-10a1 1 0 0 1-.5-.5v-10a1 1 0 0 1 .5-.5h6.6a1 1 0 0 0 .5-.5"/><path fill-rule="evenodd" d="M16 .5a1 1 0 0 0-.5-.5h-5a.5.5 0 0 0 0 1h3.8L6 9.1a.5.5 0 1 0 .8.8L15 1.7v3.8a.5.5 0 0 0 1 0z"/></symbol>
+        <symbol id="bi-node-plus" viewBox="0 0 16 16"><path fill-rule="evenodd" d="M11 4a4 4 0 1 0 0 8 4 4 0 0 0 0-8M6 7.5a5 5 0 1 1 0 1H4A1.5 1.5 0 0 1 2.5 10h-1A1.5 1.5 0 0 1 0 8.5v-1A1.5 1.5 0 0 1 1.5 6h1A1.5 1.5 0 0 1 4 7.5zM11 5a1 1 0 0 1 .5.5v2h2a.5.5 0 0 1 0 1h-2v2a.5.5 0 0 1-1 0v-2h-2a.5.5 0 0 1 0-1h2v-2A1 1 0 0 1 11 5M1.5 7a1 1 0 0 0-.5.5v1a1 1 0 0 0 .5.5h1a1 1 0 0 0 .5-.5v-1a1 1 0 0 0-.5-.5z"/></symbol>
+        <symbol id="bi-gear" viewBox="0 0 16 16"><path d="M8 4.8a3.2 3.2 0 1 0 0 6.4 3.2 3.2 0 0 0 0-6.4M5.8 8a2.2 2.2 0 1 1 4.4 0 2.2 2.2 0 0 1-4.4 0"/><path d="M9.8 1.3c-.5-1.7-3-1.7-3.6 0v.4a1 1 0 0 1-1.3.5L4.6 2C2.9 1.1 1 3 2 4.6l.2.3A1 1 0 0 1 1.7 6l-.4.1c-1.7.5-1.7 3 0 3.6h.4a1 1 0 0 1 .5 1.3l-.2.3C1.1 13.1 3 15 4.6 14l.3-.2a1 1 0 0 1 1.2.5l.1.4c.5 1.7 3 1.7 3.6 0v-.4a1 1 0 0 1 1.3-.5l.3.2c1.7.9 3.5-1 2.6-2.6l-.2-.3a1 1 0 0 1 .5-1.2l.4-.1c1.7-.5 1.7-3 0-3.6h-.4a1 1 0 0 1-.5-1.3l.2-.3c.9-1.7-1-3.5-2.6-2.6l-.3.2a1 1 0 0 1-1.2-.5zm-2.6.3a1 1 0 0 1 1.6 0L9 2a2 2 0 0 0 2.7 1.2l.3-.2c.8-.4 1.6.4 1.2 1.2l-.2.3A2 2 0 0 0 14.1 7h.3c.8.3.8 1.5 0 1.7L14 9a2 2 0 0 0-1.2 2.7l.2.3c.4.8-.4 1.6-1.2 1.2l-.3-.2A2 2 0 0 0 9 14.1v.3a.9.9 0 0 1-1.7 0L7 14a2 2 0 0 0-2.7-1.2l-.3.2c-.8.4-1.6-.4-1.2-1.2l.2-.3A2 2 0 0 0 1.9 9h-.3a.9.9 0 0 1 0-1.7L2 7a2 2 0 0 0 1.2-2.7L2.9 4c-.4-.8.4-1.6 1.2-1.2l.3.2A2 2 0 0 0 7 1.9z"/></symbol>
+        <symbol id="bi-database" viewBox="0 0 16 16"><path d="M4.3 2.7Q5.8 2 8 2c2.2-.1 2.8.3 3.7.7Q13 3.4 13 4t-1.3 1.3Q10.2 6 8 6c-2.2 0-2.8-.3-3.7-.7Q3 4.6 3 4t1.3-1.3m8.7 3V7q0 .7-1.3 1.3Q10.2 9 8 9c-2.2 0-2.8-.3-3.7-.7Q3 7.6 3 7V5.7l.9.5Q5.5 7 8 7c2.5 0 3-.3 4.1-.8zM14 4c0-1-.9-1.8-1.9-2.2Q10.5 1 8 1c-2.5 0-3 .3-4.1.8Q2.2 2.5 2 4v9q.2 1.6 1.9 2.2 1.6.8 4.1.8c2.5 0 3-.3 4.1-.8S14 14 14 13zm-1 4.7V10q0 .7-1.3 1.3-1.5.7-3.7.7c-2.2 0-2.8-.3-3.7-.7Q3 10.6 3 10V8.7l.9.5q1.6.8 4.1.8c2.5 0 3-.3 4.1-.8zm0 3V13q0 .7-1.3 1.3-1.5.7-3.7.7c-2.2 0-2.8-.3-3.7-.7Q3 13.6 3 13v-1.3l.9.5q1.6.8 4.1.8c2.5 0 3-.3 4.1-.8z"/></symbol>
+        <symbol id="bi-play-circle" viewBox="0 0 16 16"><path d="M8 15A7 7 0 1 1 8 1a7 7 0 0 1 0 14m0 1A8 8 0 1 0 8 0a8 8 0 0 0 0 16"/><path d="M6.3 5h.5l3.5 2.6a.5.5 0 0 1 0 .8L6.8 11a.5.5 0 0 1-.8-.4v-5z"/></symbol>
+        <symbol id="bi-envelope-fill" viewBox="0 0 16 16"><path d="M0 3.6A2 2 0 0 1 2 2h12a2 2 0 0 1 2 1.6L8 8.4zm0 1.1v7.1l5.8-3.6zm6.8 4.1-6.6 4A2 2 0 0 0 2 14h12a2 2 0 0 0 1.8-1.1l-6.6-4-1.2.7zm3.4-.6 5.8 3.6V4.7z"/></symbol>
+        <symbol id="bi-linkedin" viewBox="0 0 16 16"><path d="M0 1.1Q0 .1 1.2 0h13.6Q16 .1 16 1.1V15q0 1-1.2 1.1H1.2Q0 15.9 0 14.9zm5 12.3V6.2H2.4v7.2zM3.6 5.2Q5.1 5 5.1 3.9T3.8 2.7c-1.3-.1-1.4.5-1.4 1.2q0 1.2 1.3 1.3zm5 8.2V8.8q.3-.9 1.3-1 1.2.2 1.2 1.7v3.9h2.4V9.3q-.2-3.4-2.8-3.3C9.5 6 9 6.7 8.7 7.2v-1H6.3v7.2z"/></symbol>
     </svg>
 
     <nav class="navbar navbar-expand-lg navbar-dark bg-primary">
@@ -132,17 +149,17 @@
                             <svg class="tech-icon ms-2" aria-hidden="true" focusable="false"><use href="#ti-react"/></svg> React
                             <svg class="tech-icon ms-2" aria-hidden="true" focusable="false"><use href="#ti-typescript"/></svg> TypeScript
                             <svg class="tech-icon ms-2" aria-hidden="true" focusable="false"><use href="#ti-postgresql"/></svg> PostgreSQL
-                            <i class="bi bi-box text-primary ms-2"></i> Docker
-                            <i class="bi bi-git text-danger ms-2"></i> Git
+                            <svg class="bi text-primary ms-2" aria-hidden="true" focusable="false"><use href="#bi-box"/></svg> Docker
+                            <svg class="bi text-danger ms-2" aria-hidden="true" focusable="false"><use href="#bi-git"/></svg> Git
                         </p>
                         <a href="https://github.com/M4H44/contiapp-java"
                            target="_blank"
                            class="btn btn-outline-primary btn-sm me-2">
-                            <i class="bi bi-github me-1"></i>
+                            <svg class="bi me-1" aria-hidden="true" focusable="false"><use href="#bi-github"/></svg>
                             GitHub (on request)
                         </a>
                         <button type="button" class="btn btn-outline-primary btn-sm me-2" data-bs-toggle="modal" data-bs-target="#contiGallery">
-                            <i class="bi bi-images me-1"></i>
+                            <svg class="bi me-1" aria-hidden="true" focusable="false"><use href="#bi-images"/></svg>
                             Screenshots
                         </button>
 
@@ -186,7 +203,7 @@
                         <a href="https://www.skolium.sk/"
                            target="_blank"
                            class="btn btn-outline-success btn-sm">
-                            <i class="bi bi-globe me-1"></i>
+                            <svg class="bi me-1" aria-hidden="true" focusable="false"><use href="#bi-globe"/></svg>
                             Open website
                         </a>
 
@@ -212,16 +229,16 @@
                         </ul>
 
                         <p class="text-secondary small">
-                            <i class="bi bi-code-slash"></i> HTML
-                            <i class="bi bi-palette ms-2"></i> CSS
-                            <i class="bi bi-filetype-js ms-2"></i> JavaScript
-                            <i class="bi bi-github ms-2"></i> GitHub Pages
+                            <svg class="bi" aria-hidden="true" focusable="false"><use href="#bi-code-slash"/></svg> HTML
+                            <svg class="bi ms-2" aria-hidden="true" focusable="false"><use href="#bi-palette"/></svg> CSS
+                            <svg class="bi ms-2" aria-hidden="true" focusable="false"><use href="#bi-filetype-js"/></svg> JavaScript
+                            <svg class="bi ms-2" aria-hidden="true" focusable="false"><use href="#bi-github"/></svg> GitHub Pages
                         </p>
 
                         <a href="https://m4h44.github.io/investicna_kalkulacka/index.html"
                            target="_blank"
                            class="btn btn-outline-primary btn-sm me-2">
-                            <i class="bi bi-box-arrow-up-right me-1"></i>
+                            <svg class="bi me-1" aria-hidden="true" focusable="false"><use href="#bi-box-arrow-up-right"/></svg>
                             Open calculator
                         </a>
                     </div>
@@ -252,24 +269,24 @@
                         </ul>
 
                         <p class="small">
-                            <i class="bi bi-node-plus text-success"></i> Node.js
-                            <i class="bi bi-gear text-primary ms-2"></i> Express
-                            <i class="bi bi-database text-info ms-2"></i> MySQL
-                            <i class="bi bi-box text-warning ms-2"></i> Docker
-                            <i class="bi bi-git text-danger ms-2"></i> Git
+                            <svg class="bi text-success" aria-hidden="true" focusable="false"><use href="#bi-node-plus"/></svg> Node.js
+                            <svg class="bi text-primary ms-2" aria-hidden="true" focusable="false"><use href="#bi-gear"/></svg> Express
+                            <svg class="bi text-info ms-2" aria-hidden="true" focusable="false"><use href="#bi-database"/></svg> MySQL
+                            <svg class="bi text-warning ms-2" aria-hidden="true" focusable="false"><use href="#bi-box"/></svg> Docker
+                            <svg class="bi text-danger ms-2" aria-hidden="true" focusable="false"><use href="#bi-git"/></svg> Git
                         </p>
 
                         <a href="https://github.com/M4H44/salon-booking"
                            target="_blank"
                            class="btn btn-outline-primary btn-sm me-2">
-                            <i class="bi bi-github me-1"></i>
+                            <svg class="bi me-1" aria-hidden="true" focusable="false"><use href="#bi-github"/></svg>
                             GitHub (on request)
                         </a>
 
                         <a href="https://youtu.be/UNy40AKA7lw"
                            target="_blank"
                            class="btn btn-outline-success btn-sm">
-                            <i class="bi bi-play-circle me-1"></i>
+                            <svg class="bi me-1" aria-hidden="true" focusable="false"><use href="#bi-play-circle"/></svg>
                             Demo video
                         </a>
                     </div>
@@ -288,15 +305,15 @@
     <footer class="text-center text-muted py-4 border-top">
         <div class="mb-2">
             <a href="mailto:matohtk@gmail.com" class="text-secondary me-3" aria-label="E-mail">
-                <i class="bi bi-envelope-fill"></i>
+                <svg class="bi" aria-hidden="true" focusable="false"><use href="#bi-envelope-fill"/></svg>
             </a>
             <a href="https://www.linkedin.com/in/martin-hu%C5%A5ka-8b8707249/" target="_blank" rel="noopener"
                class="text-secondary me-3" aria-label="LinkedIn">
-                <i class="bi bi-linkedin"></i>
+                <svg class="bi" aria-hidden="true" focusable="false"><use href="#bi-linkedin"/></svg>
             </a>
             <a href="https://github.com/M4H44" target="_blank" rel="noopener" class="text-secondary"
                aria-label="GitHub">
-                <i class="bi bi-github"></i>
+                <svg class="bi" aria-hidden="true" focusable="false"><use href="#bi-github"/></svg>
             </a>
         </div>
         © 2026 Martin Huťka
